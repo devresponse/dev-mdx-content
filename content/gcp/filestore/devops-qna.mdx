@@ -1,0 +1,44 @@
+
+**Technical Interview Questions for DevOps Engineer - Filestore:**
+
+1. What is Filestore and how is it different from other cloud storage solutions?
+- Filestore is a managed storage service on Google Cloud Platform that allows you to store and manage large amounts of data in a simple and cost-effective manner. It provides a fully managed, scalable, and highly available file storage solution for your applications, making it different from other storage options like Cloud Storage or Cloud SQL.
+
+2. How would you set up a Filestore instance for a new project?
+- I would use the Google Cloud Console or CLI to create a new Filestore instance, specifying the desired region, storage capacity, and file share permissions. I would also ensure that the instance is connected to a VPC network for secure access.
+
+3. Can you explain how Filestore uses network file system (NFS) for file sharing?
+- Filestore uses NFSv3 or NFSv4 as the network file system protocol for clients to access file shares. It allows multiple clients to access the same file share simultaneously, providing a shared storage solution for applications running in a cluster.
+
+4. How do you configure backups and snapshots for Filestore instances?
+- Filestore provides automatic daily backups and allows you to create manual snapshots as needed. I would configure backups and snapshots using the Filestore API or Google Cloud Console, specifying the retention period and desired schedule.
+
+5. How would you troubleshoot performance issues with Filestore?
+- I would first check the CPU and network utilization for the Filestore instance using Google Cloud Monitoring. If the utilization is high, I would consider upgrading the instance size. If the issue persists, I would look for any network or firewall configuration issues that could be impacting performance.
+
+6. Can you explain how Filestore provides high availability and data durability?
+- Filestore stores data on multiple disks in a distributed manner, making it highly available. It also uses data redundancy techniques, such as data mirroring and checksum validation, to ensure data durability and prevent data loss.
+
+7. How would you migrate data from an existing on-premise file server to Filestore?
+- I would use the Filestore online migration tool or the command-line tool to transfer the data from the on-premise server to the Filestore instance. I would also ensure that the existing applications are configured to access the file shares from the Filestore instance.
+
+8. How does Filestore integrate with other Google Cloud services and tools?
+- Filestore integrates with Compute Engine, Kubernetes Engine, and App Engine for applications running on these platforms to access file shares. It also integrates with Cloud Pub/Sub, Cloud Functions, and Dataflow for data processing and analytics.
+
+9. Can you explain how Filestore manages file share permissions and access control?
+- Filestore uses access control lists (ACLs) to manage file share permissions and provide granular access control for files and directories. It also supports VPC service controls for additional security measures.
+
+10. How would you scale a Filestore instance to meet increasing storage or performance demands?
+- I would first consider increasing the instance size or adding more nodes to the instance if storage demands are increasing. If performance demands are increasing, I would look into using multiple Filestore instances in a cluster for better performance and scalability.
+
+**Technical Discussion Topics for Filestore:**
+- Overview of Filestore features and capabilities
+- Use cases for Filestore in different industries and scenarios
+- Filestore architecture and key components
+- Filestore data management and migration strategies
+- Integration of Filestore with other Google Cloud services
+- Best practices for optimizing Filestore performance
+- Filestore security and access control measures
+- Monitoring and troubleshooting techniques for Filestore
+- Upgrading and scaling Filestore instances for changing business needs
+- Future developments and updates for Filestore on Google Cloud Platform

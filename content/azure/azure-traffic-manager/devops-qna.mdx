@@ -1,0 +1,43 @@
+
+# Technical Questions:
+1. How familiar are you with Azure Traffic Manager?
+- I have experience working with Azure Traffic Manager and have a deep understanding of its functionalities and features.
+
+2. Can you explain the role of Azure Traffic Manager in a deployment process?
+- Azure Traffic Manager is a DNS-based traffic load balancer that helps distribute user traffic across multiple Azure services in different regions. It also monitors the health of your services and redirects traffic to healthy endpoints.
+
+3. How do you integrate Azure Traffic Manager with other Azure services?
+- Azure Traffic Manager integrates seamlessly with other Azure services by using DNS to route traffic to different endpoints. It also provides integration options with Azure Monitor, Azure Application Gateway, and Azure CDN.
+
+4. Can you walk us through the process of setting up a new deployment with Azure Traffic Manager?
+- The first step would be to create an Azure Traffic Manager profile and define the routing method, such as priority or performance. Then, I would add the desired endpoints in different regions and configure health checks for each one. Lastly, I would test the deployment to ensure it is running smoothly.
+
+5. How do you ensure high availability and fault tolerance with Azure Traffic Manager?
+- Azure Traffic Manager uses a DNS-based approach that automatically detects failures and redirects traffic to healthy endpoints, ensuring high availability and fault tolerance for the deployment.
+
+6. Can you explain the difference between weighted and priority routing in Azure Traffic Manager?
+- Weighted routing allows for distributed traffic based on user-defined weights, while priority routing directs all traffic to the highest priority endpoint and only distributes traffic to lower priority endpoints if the primary one is unavailable.
+
+7. How do you handle traffic routing for applications that require sticky sessions?
+- Azure Traffic Manager supports session affinity, which enables traffic to be routed to the same endpoint based on the user's initial request. This is achieved by setting a cookie on the client-side, which is used for subsequent requests.
+
+8. In what scenarios would you recommend the use of Azure Traffic Manager?
+- Azure Traffic Manager is ideal for scenarios where high availability, fault tolerance, and global scale of deployment are essential. It is also useful in cases where multiple services need to be accessed by users in different regions.
+
+9. How do you monitor and troubleshoot issues with Azure Traffic Manager?
+- Azure Traffic Manager provides built-in monitoring capabilities, such as endpoint health checks and traffic analytics. I also utilize Azure Monitor and Application Insights to troubleshoot any issues with the deployment.
+
+10. Can you explain how you would handle a sudden spike in traffic on an Azure Traffic Manager profile?
+- I would scale up the endpoint instances to meet the increased demand and adjust the traffic distribution settings in the Azure Traffic Manager profile to ensure the deployment remains stable.
+
+# Technical Discussion Topics:
+
+- Azure Traffic Manager routing methods and when to use them.
+- Implementing high availability and fault tolerance with Azure Traffic Manager.
+- Integrating Azure Traffic Manager with other Azure services, such as Azure CDN and Application Gateway.
+- Load balancing algorithms used by Azure Traffic Manager.
+- Implementation of session affinity and its benefits.
+- Monitoring and troubleshooting strategies for Azure Traffic Manager deployments.
+- Deployment options for Azure Traffic Manager, such as global distribution or regional routing.
+- DNS configuration for Azure Traffic Manager profiles.
+- Best practices for managing and maintaining Azure Traffic Manager profiles.

@@ -1,0 +1,61 @@
+
+Technical Interview Questions:
+
+1. What is Azure Blob Storage and how does it differ from other storage options in Azure?
+
+Answer:
+- Azure Blob Storage is a cloud-based storage service offered by Microsoft Azure that is optimized for storing vast amounts of unstructured data.
+- It differs from other Azure storage options such as Azure File Storage and Azure Queue Storage as it is specifically designed for storing large files and objects.
+
+2. What are the different types of blobs available in Azure Blob Storage?
+
+Answer:
+- There are three types of blobs: block blobs, append blobs, and page blobs.
+- Block blobs are designed for storing and managing large files, while append blobs are used for appending data to an existing blob.
+- Page blobs are optimized for storing random access files, such as virtual hard drives.
+
+3. How is data accessed in Azure Blob Storage?
+
+Answer:
+- Data can be accessed through a REST API, Azure Storage Client Library, or by using a tool like Azure Storage Explorer.
+- Blobs can also be accessed through a URL generated in the Azure portal.
+
+4. How can you restrict access to your data in Azure Blob Storage?
+
+Answer:
+- Azure Blob Storage supports two types of shared access signatures (SAS) that can be used to control access to your data: service SAS and account SAS.
+- Service SAS restricts access to a specific blob or container, while account SAS restricts access to multiple resources within an storage account.
+
+5. Can you explain how blob versioning works in Azure Blob Storage?
+
+Answer:
+- Blob versioning allows you to store and retrieve multiple versions of a blob.
+- Whenever a blob is modified or deleted, a new version is created and the previous version is preserved.
+- Blob versioning must be enabled at the storage account level and can be managed through lifecycle management policies.
+
+6. How can you synchronize files between your local environment and Azure Blob Storage?
+
+Answer:
+- Azure Blob Storage supports the AzCopy tool, which allows you to copy files to and from Azure Blob Storage using the command line or a web interface.
+- You can also use the Azure Storage Client Library or Azure Data Factory to sync files between your local environment and Azure Blob Storage.
+
+7. How do you handle disaster recovery with Azure Blob Storage?
+
+Answer:
+- Azure Blob Storage offers geo-redundant storage (GRS) and geo-zone-redundant storage (GZRS) options for disaster recovery.
+- GRS automatically replicates your data to a secondary region, while GZRS replicates your data to another data center in the same region.
+- You can also use Azure Site Recovery to create a disaster recovery plan for your storage account.
+
+Technical Discussion Topics:
+
+- Overview of Azure Blob Storage and its use cases.
+- Benefits of using Azure Blob Storage over other storage options.
+- Understanding the storage tiers in Azure Blob Storage and when to use each one.
+- Integrating Azure Blob Storage with other Azure Services, such as Azure Functions and Azure Data Factory.
+- Security best practices for managing access to blobs in Azure Blob Storage.
+- Capacity planning and scalability considerations for managing large amounts of data in Azure Blob Storage.
+- Monitoring and troubleshooting techniques for managing and optimizing Azure Blob Storage performance.
+- Compliance and regulatory requirements related to storing data in Azure Blob Storage.
+- External tools and services that can be used to enhance the functionality of Azure Blob Storage, such as backup and disaster recovery solutions.
+- Best practices for managing and organizing data in Azure Blob Storage, including using lifecycle management policies.
+- Upcoming updates and features for Azure Blob Storage and its integration with other Azure services. 

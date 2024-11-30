@@ -1,0 +1,44 @@
+
+
+Technical Interview Questions:
+1. What is Azure Front Door and what problem does it solve?
+- Azure Front Door is a global, scalable content delivery network (CDN) that improves the performance, reliability, and security of web applications. It allows for fast content delivery and load balancing across different regions and helps to protect against application-layer attacks.
+
+2. How does Azure Front Door handle incoming requests?
+- Azure Front Door uses a routing mechanism to direct incoming requests to the closest and most available back-end server. It uses health probes to continuously check the status of the back-end servers and routes requests only to healthy servers.
+
+3. How can you configure custom domain names in Azure Front Door?
+- Custom domain names can be configured by setting up a CNAME record in the DNS settings for the desired domain and pointing it to the Front Door domain name.
+
+4. Can you explain how load balancing works in Azure Front Door?
+- Azure Front Door uses a round-robin algorithm to distribute incoming requests evenly among the available back-end servers. It also supports session affinity to ensure that requests from the same client are directed to the same back-end server, if desired.
+
+5. How does Azure Front Door provide SSL termination?
+- Azure Front Door acts as an SSL/TLS termination point, which means it terminates the incoming encrypted requests and then passes on the unencrypted requests to the back-end servers. This helps to offload the server from handling expensive encryption processes.
+
+6. Is it possible to add additional security measures to Azure Front Door?
+- Yes, Azure Front Door supports Web Application Firewall (WAF) policies that can be applied to protect applications from malicious attacks. It also integrates with Azure DDoS Protection for an extra layer of security against DDoS attacks.
+
+7. How does Azure Front Door handle errors and redirecting requests?
+- Azure Front Door can be configured to redirect requests to a different endpoint if a back-end server is not responding or if there is an error. It also supports custom error pages and redirection based on specific conditions.
+
+8. Can you explain how caching works in Azure Front Door?
+- Azure Front Door supports both content caching and session caching. Content caching stores frequently requested content in Front Door's edge servers for faster retrieval. Session caching stores session data to reduce database load and improve application performance.
+
+9. How can you monitor the performance and health of Azure Front Door?
+- Azure Front Door provides metrics and logs to track the health of the service and the traffic being routed through it. It also integrates with Azure Monitor for more in-depth monitoring and alerting capabilities.
+
+10. Can you perform blue/green deployments using Azure Front Door?
+- Yes, Azure Front Door supports blue/green deployments by allowing the traffic to be gradually routed to the new deployment through routing rules and the use of multiple back-end pools.
+
+Technical Discussion Topics:
+- Overview of Azure Front Door and its capabilities
+- Use cases and scenarios where Azure Front Door is particularly useful
+- Comparison with other CDN options such as Azure CDN and Akamai
+- Security features and options available in Azure Front Door
+- Tips for optimizing and configuring routing for higher performance
+- Monitoring and logging capabilities for troubleshooting and performance analysis
+- Integration with other Azure services such as Azure Application Gateway and Azure Traffic Manager
+- Best practices for managing and scaling Azure Front Door for large applications
+- Support for different protocols and features such as HTTP/2, WebSockets, and redirect rules
+- Upcoming developments and roadmap for Azure Front Door.

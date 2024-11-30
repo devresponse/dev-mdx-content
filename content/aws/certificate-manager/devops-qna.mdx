@@ -1,0 +1,44 @@
+
+
+
+
+### Technical Interview Questions and Expected Answers for DevOps Engineer
+1. What experience do you have with managing deployments using Certificate Manager?
+
+Expected Answer: As a DevOps engineer, I have several years of experience working with Certificate Manager. I have used it for managing SSL/TLS certificates for our applications and have also configured certificate renewals and revocations in the past. I am familiar with the process of requesting and installing certificates in various environments such as cloud-based and on-premise servers.
+
+2. How would you handle a situation where a certificate expires and causes disruption to our service?
+
+Expected Answer: I would first check if the certificate was set to auto-renew and troubleshoot any potential issues. If the auto-renewal failed, I would immediately request a new certificate and follow the necessary steps to install it. I would also communicate with the team to update any related configurations and ensure that the service is up and running again with the new certificate.
+
+3. Can you explain the difference between ACM and ACM Private CA?
+
+Expected Answer: ACM (AWS Certificate Manager) is a service used for managing SSL/TLS certificates for applications hosted on AWS. ACM Private CA (Certificate Authority) is a stand-alone service that allows the creation and management of private certificates for internal use, including within AWS environments.
+
+4. How do you store and manage sensitive information such as private keys when using Certificate Manager?
+
+Expected Answer: Certificate Manager utilizes the AWS Key Management Service (KMS) for secure storage and management of private keys. This allows for encryption of the key at rest and controlled access to the key by designated IAM users.
+
+5. Have you worked with ACM integrations for load balancers and API gateways?
+
+Expected Answer: Yes, I have experience configuring ACM certificates for use with AWS load balancers and API gateways. I have also set up automated certificate renewal for these integrations to ensure seamless and secured communication between clients and our services.
+
+6. Can you explain the process of requesting and installing a certificate using Certificate Manager?
+
+Expected Answer: The first step is to request the certificate by providing the domain name and selecting the validation method (DNS validation or email validation). Once the certificate has been issued, it can be installed on the desired AWS resource, such as a load balancer or API gateway, by selecting the certificate from the ACM console and attaching it to the resource.
+
+7. How do you monitor and track certificate expirations and revocations?
+
+Expected Answer: I use AWS CloudWatch to monitor the expiration dates of certificates. I have also set up alarms to notify me when a certificate is about to expire. In terms of revocations, I regularly check the ACM console for any revoked certificates and promptly replace them with new ones.
+
+### Technical Discussion Topics for Certificate Manager
+- Overview of AWS Certificate Manager and its use cases
+- Setting up and configuring ACM for different environments (e.g. EC2, Load Balancers)
+- Best practices for managing certificates and private keys with ACM
+- Differences between ACM and other certificate management solutions (e.g. Let's Encrypt)
+- Troubleshooting common issues with ACM certificates
+- Automation of certificate renewal and revocation with ACM
+- Integration with other AWS services such as API Gateway and CloudFront
+- Compliance and security considerations when using ACM
+- Multi-region deployment of ACM for high availability
+- Understanding ACM pricing and cost optimization strategies

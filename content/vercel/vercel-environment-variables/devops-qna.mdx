@@ -1,0 +1,37 @@
+
+
+**Technical Interview Questions:**
+
+1. What are Vercel Environment Variables and how are they used in deployments?
+- Vercel Environment Variables are variables that can be set within a Vercel project's settings and can be accessed during deployment. They can be used to store sensitive information such as API keys, database credentials, and other configuration options.
+
+2. How would you set and access environment variables in a Vercel project?
+- To set environment variables in a Vercel project, you can go to the project's settings and add them under the "Environment Variables" section. To access them during deployment, you can use the `process.env` object in your code.
+
+3. Can you explain the difference between public and private environment variables in Vercel?
+- Public environment variables are accessible to anyone with access to the project's source code, while private environment variables are only accessible during deployment and are not visible in the project's source code.
+
+4. How would you handle sensitive information that needs to be included in the deployment process?
+- Sensitive information, such as API keys and database credentials, should be stored as private environment variables in Vercel and accessed during the deployment process. This ensures that the information is not visible in the project's source code.
+
+5. What is the process for updating or adding new environment variables to an existing Vercel project?
+- To update or add new environment variables to an existing Vercel project, you can go to the project's settings and add them under the "Environment Variables" section. You can also update the environment variables during the deployment process through the Vercel CLI.
+
+6. Can you walk me through how you would debug an issue related to environment variables in a Vercel deployment?
+- First, I would check the project's settings to ensure that the correct environment variables are set. Then, I would check if the environment variables are being accessed correctly in the code. If the issue persists, I would use the Vercel CLI to deploy the project locally and debug any errors that may occur.
+
+7. Is it possible to use environment variables in static files, such as HTML or CSS, in a Vercel project?
+- No, environment variables can only be accessed in dynamic server-side code in a Vercel project.
+
+**Technical Discussion Topics:**
+
+- Best practices for managing environment variables in Vercel projects
+- Implementing security measures for protecting sensitive information stored as environment variables in Vercel
+- Integrating environment variables with third-party tools and services used in Vercel deployments
+- The impact of environment variables on the build and deployment process in Vercel
+- How to handle environment variables in Vercel projects with multiple environments, such as development, staging, and production
+- Using Vercel's built-in support for environment variables vs. using a custom solution for managing them
+- How environment variables can be used to enable feature flags and A/B testing in Vercel deployments
+- The benefits and limitations of using environment variables in a serverless environment like Vercel
+- Strategies for rotating and updating environment variables in Vercel to ensure security and prevent expired credentials
+- Using environment variables for zero-downtime deployments in Vercel.

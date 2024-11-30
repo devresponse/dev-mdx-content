@@ -1,0 +1,54 @@
+
+
+### Technical Interview Questions:
+1. What is Elastic Beanstalk, and why is it used in AWS services?
+- Elastic Beanstalk is a platform-as-a-service (PaaS) that allows developers to easily deploy and manage their applications on AWS services.
+- It automates the process of provisioning and configuring AWS resources, making it easier for developers to focus on their code.
+
+2. Can you explain the deployment process in Elastic Beanstalk?
+- The deployment process in Elastic Beanstalk involves creating an application, selecting a platform, uploading your application code, configuring environment variables and settings, and deploying it to the designated environment.
+- Elastic Beanstalk then automatically provisions the necessary infrastructure resources, such as EC2 instances and load balancers, and manages the deployment process.
+
+3. What are the different deployment options available in Elastic Beanstalk?
+- There are two types of deployments in Elastic Beanstalk: rolling and immutable.
+- Rolling deployments involve updating the application one instance at a time, while immutable deployments involve replacing the entire instance with a new one.
+
+4. How do you handle application versions in Elastic Beanstalk?
+- Elastic Beanstalk keeps track of application versions, allowing developers to easily rollback to a previous version if needed.
+- It also supports blue-green deployments, where a new version is deployed alongside the existing version and then traffic is gradually shifted to the new version.
+
+5. How do you monitor the performance of an application deployed on Elastic Beanstalk?
+- Elastic Beanstalk integrates with AWS CloudWatch to monitor various metrics, such as CPU utilization, network traffic, and error rates.
+- It also supports custom metrics, allowing developers to monitor specific application metrics.
+
+6. What is the role of configuration files in Elastic Beanstalk?
+- Configuration files, also known as .ebextensions, allow developers to customize the deployment environment by specifying additional settings and dependencies.
+- These files are written in YAML or JSON format and can be used to install packages, set environment variables, and configure server settings.
+
+7. Can you explain the load balancing options in Elastic Beanstalk?
+- Elastic Beanstalk supports both classic and application load balancers, which distribute incoming traffic across multiple instances.
+- Application load balancers provide more advanced features, such as load balancing based on HTTP requests and support for WebSocket protocols.
+
+8. How do you handle auto-scaling in Elastic Beanstalk?
+- Elastic Beanstalk supports auto-scaling, which automatically adjusts the number of instances based on CPU or network metrics.
+- It also allows developers to customize auto-scaling settings and thresholds to meet specific application needs.
+
+9. Can you integrate Elastic Beanstalk with other AWS services?
+- Yes, Elastic Beanstalk can be integrated with other AWS services, such as DynamoDB, RDS, and S3.
+- This allows developers to easily access and use these services within their applications.
+
+10. How do you troubleshoot issues in Elastic Beanstalk?
+- Elastic Beanstalk provides logs for both the instance and application server, allowing developers to troubleshoot issues at various levels.
+- It also supports health checks, which monitor the health of instances and automatically replace unhealthy instances.
+
+### Technical Discussion Topics:
+1. Best practices for deploying and managing applications on Elastic Beanstalk.
+2. Integrating Elastic Beanstalk with other AWS services for better functionality.
+3. Differences between rolling and immutable deployments and when to use each.
+4. Options for customizing the application environment through configuration files.
+5. Strategies for handling high traffic and scaling applications using Elastic Beanstalk.
+6. Comparing load balancing options in Elastic Beanstalk.
+7. Tips for optimizing application performance in Elastic Beanstalk.
+8. Using Elastic Beanstalk in different programming languages and frameworks.
+9. How to secure applications deployed on Elastic Beanstalk.
+10. Future developments and updates for Elastic Beanstalk.

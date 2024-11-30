@@ -1,0 +1,46 @@
+
+
+#Technical Interview Questions:
+
+1. What is Cloud Spanner and how does it differ from other database management systems?
+- Cloud Spanner is a horizontally scalable, globally distributed database management system developed by Google. It is different from other databases as it offers strong consistency along with scalability and availability across global regions.
+
+2. How does Cloud Spanner handle geographic data distribution?
+- Cloud Spanner uses a globally distributed architecture with a masterless design, where data is divided into shards and each shard is replicated across multiple regions. This ensures high availability and low latency for geographically distributed data.
+
+3. How does Cloud Spanner ensure data consistency?
+- Cloud Spanner uses a distributed two-phase commit protocol and a TrueTime API to ensure strong consistency of data across instances and regions. The TrueTime API generates a global logical time, allowing all nodes to have a consistent view of time.
+
+4. How does Cloud Spanner handle data backup and disaster recovery?
+- Cloud Spanner automatically performs daily backups and replicates data in multiple regions for disaster recovery. In case of a regional outage, data can still be accessed and modified from other regions, ensuring high availability.
+
+5. Can you explain the concept of "instance" in Cloud Spanner?
+- In Cloud Spanner, an instance is a cloud resource that contains a set of nodes that are responsible for serving and storing data. Each instance is assigned a certain amount of CPU, storage, and memory resources.
+
+6. How do you manage access control in Cloud Spanner?
+- Cloud Spanner offers various access control options such as IAM policies, database-level permissions, and row-level access control. These can be configured to restrict access to data at different levels.
+
+7. Can you explain how rollbacks work in Cloud Spanner?
+- Cloud Spanner supports transaction rollbacks, where a set of changes made within a single transaction can be rolled back in case of an error or failure. This ensures data consistency and integrity in case of transaction failures.
+
+8. How does Cloud Spanner handle schema changes?
+- Cloud Spanner supports online schema changes without any downtime. It uses a schema change manager tool that automatically applies schema changes without interrupting active transactions.
+
+9. How do you optimize queries in Cloud Spanner?
+- Cloud Spanner has built-in query optimization capabilities, but as a devops engineer, you can tune performance by optimizing schema design, selecting appropriate indexes, and using best practices for query writing.
+
+10. Can you explain how Cloud Spanner integrates with other Google Cloud Platform services?
+- Cloud Spanner integrates with other Google Cloud Platform services such as BigQuery, Google Dataflow, and Google Dataproc to provide powerful analytics and data processing capabilities.
+
+#Technical Discussion Topics:
+
+- Performance tuning and optimization in Cloud Spanner
+- High availability and fault tolerance in a globally distributed database
+- Migration to Cloud Spanner from other database systems
+- Managing backups and disaster recovery in Cloud Spanner
+- Security and access control in a multi-region database
+- Integrations with other Google Cloud Platform services
+- Managing large datasets and scaling in Cloud Spanner
+- Implementing data replication and synchronization
+- Use cases and best practices for using Cloud Spanner
+- Advantages and limitations of using Cloud Spanner compared to other database systems

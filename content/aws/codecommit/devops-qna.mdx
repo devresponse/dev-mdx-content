@@ -1,0 +1,48 @@
+
+
+
+
+Questions:
+
+1. What is Amazon CodeCommit and its main purpose?
+- Amazon CodeCommit is a fully-managed, highly scalable, secure, and private source control service that hosts Git repositories. It provides a secure and reliable platform for teams to collaborate and store their code.
+
+2. How do you create a repository in CodeCommit?
+- To create a repository in CodeCommit, you can either use the console or the AWS CLI. In the console, you can go to the CodeCommit page, click on "Create repository", and follow the prompts. Using the AWS CLI, you can use the "git init" command to initialize a repository and then use "git remote add" to link it to CodeCommit.
+
+3. How do you configure user permissions in CodeCommit?
+- CodeCommit has an integrated AWS Identity and Access Management (IAM) system, which allows for granular user access control. You can create user groups with specific permissions and add users to these groups. Alternatively, you can directly assign IAM policies to individual users.
+
+4. Can CodeCommit be used with any Git client?
+- Yes, CodeCommit can be used with any Git client as it supports all the standard Git commands and protocols.
+
+5. How does CodeCommit support collaboration within a team?
+- CodeCommit supports collaboration by allowing multiple developers to work on the same branch simultaneously. It also has features such as pull requests, which enable team members to review and approve code changes before they are merged into the main branch.
+
+6. How does CodeCommit ensure the security of code?
+- CodeCommit stores all the code in encrypted format and supports encryption at rest using AWS Key Management Service (KMS). It also integrates with IAM for user access control and has features like multi-factor authentication and authentication for Git operations.
+
+7. Can you integrate CodeCommit with other AWS services?
+- Yes, CodeCommit can be integrated with other AWS services such as AWS CodeBuild, AWS CodePipeline, and AWS CodeDeploy to create a complete end-to-end DevOps pipeline. It also integrates with AWS CloudFormation for infrastructure as code deployments.
+
+8. How does CodeCommit handle conflicts in code merges?
+- CodeCommit uses Git's three-way merge algorithm to handle conflicts in code merges. It also provides tools like the merge conflicts visualizer to help resolve conflicts.
+
+9. Can you use CodeCommit for large files and repositories?
+- Yes, CodeCommit supports large files and repositories. It offers a maximum file size limit of 2GB and a maximum repository size limit of 25GB.
+
+10. How does CodeCommit ensure high availability and durability of code repositories?
+- CodeCommit uses redundant storage systems and distributes data across multiple availability zones to ensure high availability and durability. It also takes regular backups and has a Service Level Agreement (SLA) of 99.9% uptime.
+
+Discussion Topics:
+
+1. Benefits of using CodeCommit for deployment management
+2. Best practices for organizing repositories in CodeCommit
+3. Integrating CodeCommit with third-party tools for automation and monitoring
+4. Creating and managing branches in CodeCommit for parallel development
+5. Use cases for using CodeCommit over other version control systems
+6. Integrating CodeCommit with AWS services for a complete DevOps workflow
+7. CodeCommit vs self-hosted Git solutions: key differences and considerations
+8. Handling large-scale deployments with CodeCommit
+9. Setting up notifications and triggers in CodeCommit for automated actions
+10. Managing access and permissions in CodeCommit for secure collaboration.

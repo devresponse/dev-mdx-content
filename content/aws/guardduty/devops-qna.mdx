@@ -1,0 +1,48 @@
+
+
+# Technical Questions and Expected Answers for DevOps Engineer Candidate:
+
+1. What is GuardDuty and how is it used in AWS Services?
+
+Expected Answer: GuardDuty is a threat detection service offered by AWS that uses machine learning and anomaly detection to identify potential security threats in an AWS environment. It provides real-time monitoring and alerts for suspicious activities and helps in securing the overall infrastructure of an organization.
+
+2. How does GuardDuty integrate with other AWS Services?
+
+Expected Answer: GuardDuty can be integrated with other AWS Services like CloudTrail, Amazon CloudWatch, and Amazon SNS. It can also be integrated with third-party security tools and services for a more comprehensive security solution.
+
+3. Can you explain the process of setting up GuardDuty in an AWS environment?
+
+Expected Answer: The first step is to enable GuardDuty and select the regions that need to be monitored. Then, the necessary IAM roles and permissions need to be configured to allow GuardDuty to access the required data. After that, the necessary resources and services need to be configured to send logs and alerts to GuardDuty. Finally, the alerts and findings can be viewed and managed through the GuardDuty console.
+
+4. How does GuardDuty detect and alert about potential threats?
+
+Expected Answer: GuardDuty uses machine learning and AI-driven anomaly detection to analyze logs and events from various sources in an AWS environment. It then generates findings and alerts based on patterns and behaviors that deviate from normal activities. These findings are categorized as low, medium, or high severity, and appropriate alerts are generated for each category.
+
+5. Can you explain how GuardDuty handles false positives?
+
+Expected Answer: GuardDuty allows users to dismiss the false-positive findings and also provides an option to whitelist certain activities or IP addresses to avoid future false positives. It also continuously learns from user feedback to improve the accuracy of its detection.
+
+6. How does GuardDuty help in managing deployments in an AWS environment?
+
+Expected Answer: GuardDuty can be used as part of the CI/CD pipeline to evaluate the security of code and configurations before deployment. It can also be used to monitor deployed resources and detect any misconfigured or potentially vulnerable resources.
+
+7. How does GuardDuty help in compliance and auditing?
+
+Expected Answer: GuardDuty provides detailed findings and reports that can be used for compliance and auditing purposes. It also integrates with Amazon CloudWatch Events to send notifications about specific activities or events that are of interest to auditors.
+
+8. Can you explain the difference between continuous monitoring and on-demand assessments in GuardDuty?
+
+Expected Answer: Continuous monitoring is the default mode of GuardDuty, where it continuously analyzes logs and events to detect potential threats in real-time. On the other hand, on-demand assessments can be triggered manually to re-evaluate resources and configurations for any potential security issues.
+
+# Technical Discussion Topics for GuardDuty:
+
+- GuardDuty integration with other AWS Services
+- Best practices for setting up and configuring GuardDuty
+- Managing and reviewing GuardDuty findings and alerts
+- Use cases and benefits of using GuardDuty in an AWS environment
+- GuardDuty's detection capabilities and techniques
+- Automating GuardDuty using AWS Config Rules and CloudWatch Events
+- Ensuring compliance and security with GuardDuty
+- Real-world examples of GuardDuty in action
+- Limitations and potential challenges in using GuardDuty
+- Integrating GuardDuty with third-party security tools and services. 

@@ -1,0 +1,56 @@
+
+
+# Technical Interview Questions for DevOps Engineer (Azure VPN Gateway)
+
+1. Can you explain the basic architecture of Azure VPN Gateway?
+
+Expected answer: The Azure VPN Gateway is a cloud-based network gateway that connects Azure virtual networks (VNets) to on-premises networks over the internet. It acts as a gateway for secure communication between the two networks.
+
+2. What are the different types of VPN connections supported by Azure VPN Gateway?
+
+Expected answer: Azure VPN Gateway supports Site-to-Site (S2S) connections, Point-to-Site (P2S) connections, and VNet-to-VNet connections.
+
+3. Can you walk me through the steps to set up a Site-to-Site connection using Azure VPN Gateway?
+
+Expected answer: Sure, the steps include creating a virtual network gateway, configuring the local network gateway, creating a connection, and configuring the connection properties.
+
+4. How do you ensure high availability for Azure VPN Gateway?
+
+Expected answer: Azure VPN Gateway uses active-active and active-passive failover to ensure high availability. Active-active failover uses active-active gateways in both Azure and on-premises, while active-passive failover uses an active gateway in Azure and a standby gateway in on-premises.
+
+5. Can you explain the management methods available for Azure VPN Gateway?
+
+Expected answer: Azure VPN Gateway can be managed using Azure Portal, PowerShell, Azure CLI, and REST APIs.
+
+6. How do you troubleshoot connectivity issues with Azure VPN Gateway?
+
+Expected answer: Troubleshooting connectivity issues involves checking the VPN gateway status, reviewing logs, and using network troubleshooting tools like packet capture, IPsec monitoring, and routing table analysis.
+
+7. What is the purpose of virtual network peering and how is it used with Azure VPN Gateway?
+
+Expected answer: Virtual network peering is used to connect two Azure VNets directly with high-bandwidth, low-latency links. It can be used with Azure VPN Gateway to create a VNet-to-VNet connection.
+
+8. How does Azure VPN Gateway handle encryption and decryption of network traffic?
+
+Expected answer: Azure VPN Gateway uses the Internet Key Exchange (IKE) protocol to establish a secure IPsec tunnel between the on-premises and Azure networks. IKE negotiates the encryption and decryption algorithms to be used for secure communication.
+
+9. Can you explain the authentication methods supported by Azure VPN Gateway for Point-to-Site connections?
+
+Expected answer: Azure VPN Gateway supports two authentication methods for P2S connections - Azure AD and certificate-based authentication. Azure AD uses Azure AD credentials for user authentication, while certificate-based authentication uses a self-signed certificate or a trusted root certificate for client authentication.
+
+10. How do you perform a failover for Azure VPN Gateway?
+
+Expected answer: To perform a failover for Azure VPN Gateway, the active gateway must become unavailable for any reason. In this case, the standby gateway will take over and become the active gateway. This process is seamless and does not disrupt ongoing connections.
+
+# Technical Discussion Topics for Azure VPN Gateway
+
+- Overview of Azure VPN Gateway features and capabilities
+- Design considerations for setting up Azure VPN Gateway
+- Best practices for configuring and managing Azure VPN Gateway
+- Understanding different types of VPN connections and their use cases
+- High availability and disaster recovery strategies for Azure VPN Gateway
+- Network security and encryption options for Azure VPN Gateway
+- Comparison of routing options - static vs dynamic for Azure VPN Gateway
+- Troubleshooting common connectivity issues with Azure VPN Gateway
+- Scaling and performance optimization for Azure VPN Gateway
+- Integration of Azure VPN Gateway with other Azure services for a complete network infrastructure

@@ -1,0 +1,38 @@
+
+
+## Technical Questions for DevOps Engineer Interview for EKS
+
+- What is EKS (Elastic Kubernetes Service) and how is it different from other Kubernetes services?
+    -EKS is a managed Kubernetes service offered by Amazon Web Services (AWS) that allows users to deploy and manage clusters of Kubernetes containers on AWS. It differs from other services by offering better integration with AWS tools and services, automated cluster scaling, and simplified cluster management. 
+- What are the benefits of using EKS for containerized applications?
+    - EKS offers the scalability, efficiency, and flexibility of Kubernetes for running containerized applications, while also providing the added benefits of being a fully-managed service on AWS. These benefits include simplified cluster management, automatic updates, security features, integration with other AWS services, and cost savings.
+- How do you create a cluster using EKS?
+    - A cluster in EKS can be created through the AWS console, AWS CLI, or with an API call. The process involves creating an Amazon EKS control plane that manages the Kubernetes API server and other AWS services, and launching worker nodes on Amazon EC2 instances.
+- How does EKS handle automatic scaling of clusters?
+    - EKS offers a feature called Cluster AutoScaler, which automatically increases the number of worker nodes in a cluster based on workload demand. This ensures that there are enough resources available to handle the workload while minimizing costs by scaling down when the demand decreases.
+- How does EKS handle updates and patches?
+    - EKS automates the process of updating and patching clusters by automatically creating new nodes with the latest Amazon EKS-optimized AMI and draining and terminating the old nodes. This ensures minimal disruption and downtime for the cluster.
+- How does EKS handle security for Kubernetes clusters?
+    - EKS integrates with AWS Identity and Access Management (IAM) to control access to Kubernetes clusters through IAM roles. EKS also supports network security using Amazon VPC and security groups, and integrates with other AWS security services such as AWS PrivateLink and AWS CloudTrail.
+- How does EKS handle logging and monitoring of clusters?
+    - EKS integrates with Amazon CloudWatch to provide cluster-level monitoring and metrics for monitoring, and integrates with Amazon Elastic Container Service for Kubernetes (ECS-K) to manage logging for Kubernetes clusters. It also supports integration with third-party tools like Datadog and Splunk.
+- Can you explain how EKS handles load balancing?
+    - EKS integrates with AWS Load Balancers (Classic and Application) to distribute incoming network traffic across multiple worker nodes in a cluster. This ensures that the workload is balanced and that the service remains highly available.
+- How does EKS handle cluster backups and disaster recovery?
+    - EKS clusters can be backed up by taking snapshots of the worker nodes and any attached Amazon Elastic Block Store (EBS) volumes. In the event of a disaster, users can use these snapshots to recreate the cluster. EKS also supports disaster recovery through multi-AZ deployments and cluster replication.
+- Can you explain the process of deploying applications using EKS?
+    - To deploy an application using EKS, users need to create a Kubernetes manifest file that describes the desired state of the application, including container images, resource requests, and replicas. This file can then be applied to the cluster using the kubectl command line tool or through AWS tools like CodeDeploy.
+
+## Technical Discussion Topics for EKS
+
+- Architecture of EKS and how it integrates with other AWS services.
+- Best practices for creating and managing EKS clusters.
+- Integration of EKS with other container orchestration tools.
+- Challenges of managing applications and workloads in EKS clusters.
+- Security considerations for EKS and how to ensure best practices.
+- Monitoring and logging options for EKS clusters.
+- Cost optimization strategies for EKS clusters.
+- Automation tools for managing EKS clusters.
+- EKS cluster scaling and auto-scaling strategies.
+- Use cases for EKS and how it compares to other container orchestration services.
+ 

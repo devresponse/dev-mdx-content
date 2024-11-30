@@ -1,0 +1,47 @@
+
+
+### Technical Interview Questions
+
+1. What is DynamoDB and why is it used?
+- DynamoDB is a NoSQL database service offered by Amazon Web Services. It is used for storing and retrieving large amounts of data that require low latency and high scalability.
+
+2. How does DynamoDB ensure high availability and data durability?
+- DynamoDB replicates data across multiple servers in multiple availability zones, ensuring that data is always available and durable.
+
+3. Explain the difference between a partition key and a sort key in DynamoDB.
+- A partition key is used to partition data across different servers, while a sort key is used to sort data within a partition. 
+
+4. Can you set up automatic scaling for DynamoDB tables? If yes, how?
+- Yes, automatic scaling can be set up using DynamoDB's scaling policies, which use CloudWatch metrics to adjust provisioned throughput based on demand.
+
+5. How does DynamoDB handle conflicts in data writes?
+- DynamoDB uses a last-writer-wins approach for handling conflicts in data writes. The latest version of a particular item will be saved and reflected in subsequent reads.
+
+6. What is the difference between a local and global secondary index?
+- A local secondary index is created on the same partition key as the base table, while a global secondary index can have a different partition key and can span multiple partitions.
+
+7. How does DynamoDB handle hot partitions and what can be done to avoid them?
+- Hot partitions occur when data is disproportionately written to or read from a particular partition key. DynamoDB handles this by automatically splitting the partition into smaller partitions. To avoid hot partitions, it is recommended to use a randomized partition key or use the DynamoDB adaptive capacity feature.
+
+8. Can you scale down the provisioned throughput for a DynamoDB table?
+- Yes, the provisioned throughput can be scaled down as long as it is above the minimum throughput defined for the table.
+
+9. How does DynamoDB handle data encryption?
+- DynamoDB supports encryption at rest using AWS Key Management Service. It also supports client-side encryption using AWS Encryption SDK.
+
+10. How can you monitor performance and usage of DynamoDB tables?
+- DynamoDB provides CloudWatch metrics for monitoring performance. It also supports Amazon CloudWatch alarms and Amazon CloudWatch events for taking automated actions based on specific metrics.
+
+### Technical Discussion Topics
+
+- Data modeling in DynamoDB
+- Designing efficient partition keys
+- Optimizing read/write capacity for cost-efficiency
+- Handling large and complex datasets in DynamoDB
+- Implementing access control and security in DynamoDB
+- Backup and disaster recovery for DynamoDB tables
+- DynamoDB transactions and consistency models
+- Using AWS Lambda with DynamoDB
+- Using DynamoDB in serverless architectures
+- Migrating from traditional relational databases to DynamoDB
+- Best practices and tips for DynamoDB performance optimization

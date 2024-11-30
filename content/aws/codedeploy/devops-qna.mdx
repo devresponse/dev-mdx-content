@@ -1,0 +1,37 @@
+
+
+Technical Questions:
+1. What is the purpose of CodeDeploy?
+2. Can you explain the deployment process in CodeDeploy?
+3. How would you handle rollbacks in CodeDeploy?
+4. What are the different deployment strategies supported by CodeDeploy?
+5. Can you walk me through the configuration process for a CodeDeploy app?
+6. How does CodeDeploy integrate with other AWS services?
+7. What challenges have you faced while using CodeDeploy and how did you overcome them?
+8. Can you explain the blue-green deployment approach in CodeDeploy?
+9. What is the difference between CodeDeploy and other deployment tools, such as Jenkins?
+10. How would you troubleshoot deployment failures in CodeDeploy?
+
+Expected Answers:
+1. CodeDeploy is a deployment service that automates software deployments to Amazon EC2 instances, on-premises servers, or serverless Lambda functions.
+2. The deployment process in CodeDeploy involves three main steps: application revision, deployment group configuration, and deployment.
+3. Rollbacks in CodeDeploy can be triggered manually or automatically using a rollback event in the deployment configuration. The platform will revert the deployment to the previous version if any errors are detected.
+4. CodeDeploy supports four deployment strategies: in-place, blue-green (with or without additional traffic routing), and AWS Lambda deployments.
+5. The configuration process for a CodeDeploy app involves creating a deployment group, selecting the deployment type and strategy, and setting up the application revision.
+6. CodeDeploy integrates with other AWS services such as AWS CodePipeline, AWS CodeCommit, and AWS CodeBuild for a seamless continuous delivery process.
+7. Some common challenges in using CodeDeploy include troubleshooting deployment errors, managing complex deployment configurations, and integrating with other services. These challenges can be overcome with thorough testing, proper configuration management, and utilizing available resources.
+8. The blue-green deployment approach in CodeDeploy involves deploying the new version of the application to a separate set of instances, running tests, and then routing traffic to the new instances while terminating the old instances.
+9. CodeDeploy is a fully managed deployment service that allows for easy and scalable deployments to various environments, whereas tools like Jenkins require more manual setup and management.
+10. Deployment failures in CodeDeploy can be troubleshooted by checking the deployment logs, reviewing the deployment configuration, and ensuring that the application revision is correct.
+
+Technical Discussion Topics:
+1. Benefits of using CodeDeploy for deployment automation.
+2. Deployment strategies and best practices for different types of applications.
+3. Integration of CodeDeploy with other AWS services for continuous delivery.
+4. Handling rollbacks and managing deployments in production environments.
+5. Using CodeDeploy in a cross-platform environment (e.g. on-premises servers and AWS EC2 instances).
+6. Blue-green deployment approach and its advantages.
+7. CodeDeploy agent and its role in the deployment process.
+8. Advanced features of CodeDeploy such as customized deployment hooks and deployment groups.
+9. Monitoring and tracking deployments in CodeDeploy.
+10. CodeDeploy performance and scalability for large scale deployments.

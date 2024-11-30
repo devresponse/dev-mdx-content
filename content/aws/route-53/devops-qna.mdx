@@ -1,0 +1,37 @@
+
+## Technical Interview Questions:
+- What is Route 53 and how does it work?
+- Can you explain the difference between a CNAME and an A record?
+- How do you handle DNS failover in Route 53?
+- Can you walk me through the process of creating a new hosted zone in Route 53?
+- How do you set up routing policies in Route 53?
+- What is the purpose of health checks in Route 53?
+- Can you explain the difference between latency-based and geolocation routing policies?
+- How do you use Route 53 to redirect traffic to an S3 bucket?
+- How does Route 53 integrate with other AWS services?
+- Can you describe a scenario where you had to troubleshoot DNS issues in Route 53?
+
+## Expected Answers:
+
+- Route 53 is a scalable and highly available cloud Domain Name System (DNS) service that routes user requests to infrastructure such as EC2 instances, load balancers, and S3 buckets.
+- A CNAME (Canonical Name) record is used to map a domain or subdomain to another domain. An A record (Address) is used to map a domain or subdomain to an IP address.
+- DNS failover in Route 53 can be achieved by setting up health checks to monitor the health of the endpoints and configuring DNS failover rules to direct traffic to healthy endpoints.
+- To create a new hosted zone in Route 53, you need to go to the Route 53 console and click on "Create Hosted Zone". Then, you need to enter a domain name and select a routing policy. Once the hosted zone is created, you can add records to it.
+- Routing policies in Route 53 determine how traffic is routed to different endpoints based on various factors such as location, latency, or weighted distribution.
+- Health checks in Route 53 are used to monitor the health of endpoints and can be configured with different types of checks such as HTTP, HTTPS, TCP, and failover.
+- Latency-based routing policy directs traffic to the endpoint with the lowest latency from the user, while geolocation routing policy directs traffic based on the user's geographic location.
+- To redirect traffic to an S3 bucket using Route 53, you need to create an S3 bucket with the same name as the domain or subdomain you want to redirect. Then, you can configure a bucket policy to redirect requests to another domain or subdomain.
+- Route 53 integrates with other AWS services such as CloudFront, Elastic Load Balancing, and AWS Certificate Manager for easier management and optimization of traffic routing.
+- In case of DNS issues, I would first check the health of the endpoints using health checks in Route 53. Then, I would verify the DNS records and routing policies to ensure everything is configured correctly. If the issue persists, I would check for any network or connectivity issues with the endpoints.
+
+## Technical Discussion Topics:
+- Architecture and design of Route 53 for high availability and scalability.
+- Use cases and best practices for using routing policies in Route 53.
+- Integrating Route 53 with other AWS services such as ELB, CloudFront, and ACM.
+- Automation and deployment strategies for managing DNS records and routing policies in Route 53.
+- Troubleshooting common DNS issues in Route 53.
+- Implementing DNS security with Route 53 using features such as DNSSEC and VPC endpoints.
+- Load balancing and traffic management strategies using Route 53 for applications deployed in multiple regions.
+- Cost optimization and resource utilization in Route 53.
+- DNS migration to Route 53 from other DNS providers.
+- Monitoring and performance metrics of Route 53 using CloudWatch.

@@ -1,0 +1,46 @@
+
+
+##Technical Questions for DevOps Engineer - AppSync
+
+1. What is AWS AppSync and how does it differ from other AWS services?
+    - AWS AppSync is a fully managed service that allows developers to easily create and manage real-time, collaborative applications. It differs from other AWS services in that it provides a fully managed GraphQL server, allowing developers to focus on building applications rather than managing infrastructure.
+
+2. How does AppSync handle data caching and synchronization?
+    - AppSync uses a caching system that stores data in a local cache on each client, reducing the need for network calls. It also uses subscriptions and real-time data synchronization to ensure that all clients have the most up-to-date data.
+
+3. Can you explain the role of resolvers in AppSync?
+    - Resolvers in AppSync are responsible for fetching and processing data from the underlying data source (such as a database or other API). They allow for customization and transformation of data before it is returned to the client.
+
+4. How does AppSync handle authentication and authorization?
+    - AppSync integrates with AWS Cognito to handle authentication, and also provides authorization features such as fine-grained access control and API keys.
+
+5. What are the different types of GraphQL operations supported by AppSync?
+    - AppSync supports queries, mutations, and subscriptions, which allow for real-time data updates.
+
+6. How do you ensure data consistency when using multiple GraphQL operations in AppSync?
+    - AppSync uses a feature called automatic conflict detection and resolution to handle potential conflicts when multiple clients are making changes to the same data. It also supports custom conflict resolution strategies.
+
+7. Can you explain the concept of data sources in AppSync?
+    - Data sources are the underlying data stores or APIs that AppSync connects to in order to retrieve or manipulate data. This can include Amazon DynamoDB, Amazon RDS, and custom HTTP data sources.
+
+8. How does AppSync handle offline data access?
+    - AppSync supports offline data access by caching data on the client and using a local storage engine. This allows for offline usage and synchronization with the backend when connectivity is restored.
+
+9. Can you discuss the process for monitoring and troubleshooting AppSync?
+    - AppSync has built-in logging and monitoring features that can be viewed in the AWS console. It also integrates with AWS CloudWatch for advanced monitoring and troubleshooting.
+
+10. How do you handle errors in AppSync?
+    - AppSync provides multiple ways to handle errors, including error handling in resolvers, global error handling, and GraphQL error responses that can be customized for each query.
+
+##Technical Discussion Topics for AppSync
+
+- Understanding the core concepts of GraphQL, including queries, mutations, and subscriptions.
+- Implementing data caching and synchronization in AppSync.
+- Utilizing resolvers for data fetching and transformation.
+- Integrating authentication and authorization mechanisms with AppSync.
+- Managing data consistency and conflicts in a multi-client environment.
+- Leveraging different data sources such as DynamoDB or RDS with AppSync.
+- Implementing offline data access and synchronization in AppSync applications.
+- Monitoring and troubleshooting techniques for AppSync.
+- Implementing custom error handling in AppSync.
+- Best practices for scaling and performance optimization for AppSync applications.

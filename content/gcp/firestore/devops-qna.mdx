@@ -1,0 +1,46 @@
+
+
+Technical Questions:
+1. What is Firestore and how does it differ from traditional databases?
+- Firestore is a NoSQL document database that is part of the Google Cloud Platform. It is designed to store and synchronize data in real-time between devices and platforms.
+- Unlike traditional databases, Firestore does not use tables and rows to store data. Instead, it uses a collection and document structure that allows for more flexibility and scalability.
+
+2. How does Firestore handle data consistency and synchronization?
+- Firestore uses optimistic concurrency control to ensure data consistency. This means that multiple clients can read and write to the same data at the same time, and Firestore will handle conflicts and merge the changes automatically.
+- Firestore also supports real-time data synchronization through the use of web sockets. This allows for immediate updates to data across all devices and platforms.
+
+3. Can you explain the different data types supported by Firestore?
+- Firestore supports basic data types such as strings, numbers, booleans, and dates.
+- It also supports more complex data types such as arrays and maps.
+- In addition, Firestore allows for nested data structures, making it easier to store and retrieve data in a hierarchical format.
+
+4. How does Firestore handle security and access control?
+- Firestore uses a role-based access control system to manage security. This allows for fine-grained control over who can read, write, and modify data within the database.
+- Access control can be set at the document, collection, or global level, giving administrators the flexibility to control access as needed.
+
+5. Can you walk me through the process of deploying changes to a Firestore database?
+- Before deploying any changes, it is important to thoroughly test and review the changes to ensure they are functioning as expected.
+- Once the changes have been tested, they can be deployed using the Firebase command-line interface or through the Firebase console.
+- Firestore also allows for rollbacks in case any issues arise during the deployment process.
+
+6. How does Firestore handle scaling and high availability?
+- Firestore automatically scales and distributes data across multiple servers, allowing for high availability and improved performance.
+- As the database grows, Firestore will dynamically allocate resources to accommodate the increased workload, ensuring smooth operation even during peak traffic.
+
+Expected Answers:
+1. Firestore is a NoSQL document database that is part of Google Cloud Platform. It differs from traditional databases in that it uses a collection and document structure instead of tables and rows, allowing for more flexibility and scalability.
+2. Firestore uses optimistic concurrency control and real-time data synchronization to ensure data consistency across devices. It also supports instant updates through web sockets.
+3. Firestore supports basic data types such as strings, numbers, booleans, and dates, as well as more complex data types like arrays and maps. It also allows for nested data structures.
+4. Firestore uses a role-based access control system to manage security and access at the document, collection, or global level.
+5. Changes can be deployed through the Firebase command-line interface or console after thorough testing and review. Rollbacks are also available in case of any issues.
+6. Firestore automatically scales and distributes data across multiple servers for high availability and performance, and can dynamically allocate resources as needed.
+
+Technical Discussion Topics:
+- Real-time data synchronization
+- Security and access control
+- Scalability and high availability
+- Deployment processes and rollbacks
+- Data consistency and synchronization
+- Data types and nested data structures
+- Integration with other Google Cloud Platform services
+- Firestore pricing and cost optimization

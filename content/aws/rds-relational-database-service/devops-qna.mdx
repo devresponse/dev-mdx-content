@@ -1,0 +1,45 @@
+
+
+**Technical Interview Questions:**
+
+1. What is Amazon RDS and how does it differ from traditional database management systems?
+    * Expected Answer: Amazon RDS is a managed relational database service that simplifies the process of setting up, operating and scaling relational databases in the cloud. Unlike traditional database management systems, RDS eliminates the need for infrastructure management, software installation and configuration, making it easier for developers to focus on their applications.
+
+2. How does RDS handle backups and recovery?
+    * Expected Answer: RDS automatically performs backups of your database according to the specified backup retention period. It also allows you to manually take snapshots of your database at any time. In case of a disaster, you can restore your database from the most recent backup or snapshot.
+
+3. Can you explain the different options available for RDS instance types?
+    * Expected Answer: RDS offers several instance types, such as General Purpose, Memory Optimized and Burstable Performance. Each instance type is optimized for different use cases, such as CPU-intensive workloads or memory-intensive applications. It is important to choose the right instance type for your database to ensure optimal performance and cost-efficiency.
+
+4. What is Multi-AZ deployment and how does it ensure high availability?
+    * Expected Answer: Multi-AZ (Availability Zone) deployment is a feature in RDS that ensures high availability by automatically replicating your database to a standby instance in a different Availability Zone. In case of a planned or unplanned outage, RDS will automatically failover to the standby instance, minimizing downtime.
+
+5. How does RDS handle scalability for growing workloads?
+    * Expected Answer: RDS offers horizontal and vertical scalability options to handle growing workloads. Horizontal scaling can be achieved by adding read replicas to distribute read traffic and offload the master database. Vertical scaling is possible by upgrading the instance type, which increases the compute and storage resources available to the database.
+
+6. Can you explain how RDS integrates with other AWS services?
+    * Expected Answer: RDS integrates with other AWS services such as CloudWatch for monitoring, AWS Lambda for serverless computing, AWS IAM for access control, and AWS S3 for backup and restore. RDS also supports integration with AWS Database Migration Service for migrating databases from on-premise to the cloud.
+
+7. How does RDS handle security and access control?
+    * Expected Answer: RDS provides various security features, such as encryption at rest and in transit, network isolation using VPC, and access control using IAM. You can also use database-level security controls, such as user and role-based permissions, to control access to the database.
+
+8. Can you explain the concept of automated minor version upgrades in RDS?
+    * Expected Answer: RDS offers the option to automatically upgrade the minor version of the database engine during the maintenance window. This ensures that your database is always up to date with the latest security fixes and performance improvements.
+
+9. What are the different monitoring metrics available in RDS?
+    * Expected Answer: RDS provides various monitoring metrics, such as CPU utilization, memory usage, storage I/O, network traffic, and database connections. These metrics can be viewed in real-time using CloudWatch or can be configured to trigger alarms for specific thresholds.
+
+10. How does RDS handle database maintenance tasks, such as patching and backups?
+    * Expected Answer: RDS automates the process of patching your database with the latest updates and security fixes. It also performs regular backups according to the specified retention period. These maintenance tasks can be scheduled during predefined maintenance windows to minimize any impact on performance.
+
+**Technical Discussion Topics:**
+* The benefits of using a managed database service like RDS compared to traditional self-managed databases.
+* How RDS supports different database engines, such as MySQL, PostgreSQL, SQL Server, and Oracle.
+* Best practices for optimizing performance in RDS, including instance type selection, storage types, and configuration.
+* Strategies for handling disasters and minimizing downtime, including Multi-AZ deployment, read replicas, and backups.
+* How RDS integrates with other AWS services and popular third-party tools for monitoring, reporting, and analytics.
+* The importance of security and compliance in database management and how RDS meets these requirements.
+* Automation and scaling capabilities in RDS to handle growing workloads and changes in data usage patterns.
+* The trade-offs between cost and performance when choosing an RDS instance type and storage type.
+* Real-life scenarios and use cases for RDS in different industries and businesses.
+* The future of RDS and upcoming features and improvements in the service.

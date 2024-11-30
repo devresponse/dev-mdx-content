@@ -1,0 +1,46 @@
+
+
+# Technical Interview Questions:
+
+1. What is SNS and what are its key features?
+- SNS (Simple Notification Service) is a fully managed messaging service offered by Amazon AWS. Its key features include the ability to send messages to a large number of recipients through a variety of protocols (e.g. email, SMS, etc.), the ability to create individualized messages for each recipient, and the ability to integrate with other AWS services.
+
+2. How does the delivery of messages work in SNS?
+- SNS uses a "publish-subscribe" model, where messages are sent to a topic and then subscribers receive the messages from that topic. SNS also supports message filtering, which allows subscribers to only receive messages that are relevant to them.
+
+3. Can you explain the difference between SNS and SQS (Simple Queue Service)?
+- SNS is used for sending messages to multiple recipients, while SQS is used for storing and retrieving messages for individual consumers. SNS also supports more protocols and has the ability to send individualized messages, while SQS is best suited for storing and processing large quantities of messages in a queue.
+
+4. What are the different types of endpoints supported by SNS?
+- SNS supports several types of endpoints, including email, SMS, mobile push notifications, HTTP/HTTPS, and AWS Lambda functions.
+
+5. How do you handle failures in SNS delivery?
+- SNS has a built-in retry mechanism for failed deliveries, and it also supports delivery policies to customize retries and delays. Additionally, SNS integrates with CloudWatch to monitor delivery failures and metrics.
+
+6. How do you handle compliance and security in SNS?
+- SNS supports encrypted communication and message storage, as well as compliance with various regulatory requirements such as HIPAA and GDPR. Access control policies can also be configured to limit access to SNS resources.
+
+7. How do you handle scaling and performance in SNS?
+- SNS is a fully managed service that automatically scales based on the volume of messages. It also has high availability and durability, with the ability to handle millions of messages per second.
+
+8. Can you explain the concept of message attributes in SNS?
+- Message attributes allow you to provide additional metadata for a message, such as a message ID or timestamp. This allows subscribers to filter and process messages based on these attributes.
+
+9. How do you integrate SNS with other AWS services?
+- SNS can be integrated with other AWS services through AWS Lambda, which allows you to trigger functions based on the receipt of a message from SNS. SNS also supports message delivery to Amazon SQS, Amazon Kinesis Data Firehose, and Amazon Redshift.
+
+10. Have you worked with SNS in a disaster recovery scenario? How did you handle it?
+- In a disaster recovery scenario, SNS can be configured to replicate messages to a different AWS region for failover purposes. Other strategies such as message filtering and delivery policies can also be implemented to ensure reliable message delivery.
+
+# Technical Discussion Topics:
+
+- Best practices for setting up SNS topics and subscriptions
+- SNS access control and authentication mechanisms
+- Integrating SNS with AWS CloudFormation and other infrastructure as code tools
+- SNS delivery policies and customizations
+- Troubleshooting common issues in SNS delivery
+- SNS pricing and cost optimization strategies
+- Use cases for message filtering and how to implement it effectively
+- Monitoring and metrics for SNS performance and throughput
+- Integrating SNS with third-party messaging services
+- Implementing encryption and compliance in SNS communications

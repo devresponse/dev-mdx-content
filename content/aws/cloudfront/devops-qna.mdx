@@ -1,0 +1,46 @@
+
+
+# Technical Interview Questions for DevOps Engineer (CloudFront)
+
+1. What is Amazon CloudFront and how does it improve the performance of web applications?
+- Amazon CloudFront is a content delivery network (CDN) that is designed to deliver web, video, and other types of content to users globally with low latency and high transfer speeds. It uses a system of edge servers located in different geographical regions to store and serve cached content, reducing the distance between users and the content they request.
+
+2. How does CloudFront handle caching and what are the benefits of using it?
+- CloudFront uses different types of caching, such as edge caching and origin caching, to store and serve content. This reduces the load on the origin server and improves the performance of the application. It also allows for faster content delivery, as cached content can be served directly from the edge location closest to the user.
+
+3. Can you explain the process of setting up a CloudFront distribution?
+- A CloudFront distribution is set up by creating a distribution in the AWS Management Console and specifying the origin of the content, such as an S3 bucket or an EC2 instance. Then, the appropriate settings are configured, such as caching behavior, SSL options, and origins. Once the distribution is created, it needs to be deployed and linked to a website or application.
+
+4. How do you handle invalidation of cached content in CloudFront?
+- CloudFront allows for cache invalidation through the AWS Management Console or through API calls. Invalidation requests can be made for specific files or for entire directories. It is important to note that there is a cost associated with invalidation requests, and it is recommended to use a versioning strategy for frequently updated content instead.
+
+5. What is the difference between a CloudFront distribution and a CloudFront origin access identity (OAI)?
+- A CloudFront distribution is a collection of edge locations that serve content and it is accessed through a unique domain name. A CloudFront OAI, on the other hand, is an identity created to secure the communication between CloudFront and the origin server. It allows for restricting access to the origin only through CloudFront, improving the security of the application.
+
+6. How do you handle SSL termination with CloudFront?
+- CloudFront allows for both custom SSL certificates and AWS-provided SSL certificates to be used for secure communication between CloudFront and the end-user. The SSL certificate is configured in the CloudFront distribution settings, and the appropriate CNAME records need to be added to the DNS.
+
+7. Can you explain the concepts of CloudFront behaviors and origin groups?
+- CloudFront behaviors allow for different configurations to be applied to specific parts of the website or application, based on the request path, query strings, or cookies. Origin groups, on the other hand, are used to specify multiple origins for a single behavior. This allows for failover behavior in case one origin becomes unavailable.
+
+8. How do you handle access control in CloudFront?
+- CloudFront supports different methods of access control, such as signed URLs and signed cookies, to restrict access to content. Signed URLs are used to provide temporary access to specific files, while signed cookies can provide access to multiple files within a certain time window.
+
+9. Can CloudFront be integrated with other AWS services and how?
+- Yes, CloudFront can be integrated with other AWS services, such as S3, EC2, and Lambda. This allows for serverless content delivery, dynamic content generation, and origin access control using Lambda@Edge functions.
+
+10. How do you monitor and analyze the performance of CloudFront distributions?
+- CloudFront provides detailed metrics and logs through Amazon CloudWatch, which can be used to monitor key performance indicators, such as request count, data transfer, and error rates. It also allows for real-time monitoring and alarms to be set up for critical events.
+
+# Technical Discussion Topics for CloudFront
+
+- Best practices for setting up CloudFront distributions
+- Caching strategies to optimize performance
+- Options for invalidation and cache control
+- Managing multiple origins for a single CloudFront distribution
+- Security considerations, such as SSL termination and access control
+- Integrating CloudFront with other AWS services
+- Monitoring and troubleshooting performance and errors
+- Cost optimization strategies for CloudFront usage
+- Use cases and limitations of CloudFront for different types of web applications
+- Implementation of serverless and dynamic content delivery using Lambda@Edge.

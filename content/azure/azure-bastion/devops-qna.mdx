@@ -1,0 +1,39 @@
+
+Technical Interview Questions for Azure Bastion Devops Engineer:
+
+1. What is Azure Bastion and how does it differ from other remote access solutions?
+- Azure Bastion is a fully managed Platform as a Service (PaaS) solution for remote access to Azure VMs. It differs from other solutions in that it uses Secure Sockets Layer (SSL) encryption over the Remote Desktop Protocol (RDP) or SSH protocol, providing a more secure and simplified remote access experience.
+
+2. How do you configure and manage Azure Bastion?
+- Azure Bastion is configured and managed through the Azure portal or Azure CLI. It requires a Virtual Network and a dedicated subnet within that VNet. After provisioning Azure Bastion, you can manage access control, network settings, and other configurations through the portal or CLI.
+
+3. How can Azure Bastion improve security for remote access to Azure VMs?
+- Azure Bastion uses Azure Active Directory (AAD) authentication and SSL encryption for remote access, ensuring that only authorized users can connect to VMs. It also eliminates the need for a public IP address or Virtual Private Network (VPN) gateway, reducing the attack surface for potential security threats.
+
+4. How does Azure Bastion simplify remote access to Azure VMs?
+- Unlike other solutions, Azure Bastion requires no additional software or agents to be installed on the VM or client machine. This makes it easier to manage and reduces the potential for compatibility issues.
+
+5. Can Azure Bastion be used for both Windows and Linux VMs?
+- Yes, Azure Bastion supports both Windows and Linux VMs. However, for Linux VMs, SSH remote access must be enabled and configured.
+
+6. How does Azure Bastion handle scaling and high availability?
+- Azure Bastion is highly available by default and can scale to handle increased traffic. It also integrates with Azure Load Balancer for better performance and reliability.
+
+7. Can you explain the role of network security groups (NSGs) with Azure Bastion?
+- Azure Bastion relies on NSGs for network traffic control. By default, it will use port 3389 for RDP and port 22 for SSH. However, these can be changed to different ports based on your organization's security policies.
+
+8. Is there a limit to the number of Azure Bastion instances that can be deployed in a single subscription?
+- Yes, currently there is a limit of 50 Azure Bastion instances per subscription.
+
+Technical Discussion Topics for Azure Bastion:
+
+- Overview of Azure Bastion architecture and components
+- Best practices for deploying and managing Azure Bastion
+- Integration with Azure Virtual Networks and subnet design best practices
+- Authentication methods and restrictions for Azure Bastion
+- Strategies for managing access control and network security for Azure Bastion
+- Troubleshooting common issues and errors with Azure Bastion
+- Integration with Azure Log Analytics and other monitoring tools
+- Limitations and considerations for using Azure Bastion for remote access
+- Lifecycle management and updates for Azure Bastion
+- Cost management and optimization techniques for Azure Bastion deployments. 

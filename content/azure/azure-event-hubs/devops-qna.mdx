@@ -1,0 +1,44 @@
+
+
+## Technical Interview Questions:
+1. What is Azure Event Hubs and how does it fit into the overall Azure Cloud architecture?
+- Azure Event Hubs is a highly scalable, real-time streaming platform that can intake and process millions of events per second. It is designed for use in event-driven architectures and is a critical component of the Azure data platform. It allows for the real-time ingestion and processing of streaming data from a variety of sources.
+
+2. How do you handle scalability and high availability in Azure Event Hubs?
+- Azure Event Hubs uses a partitioned, distributed architecture to enable scalability. It also has features such as auto-scaling and auto-failover to ensure high availability even in the event of failures.
+
+3. Can you explain the concept of partitions in Azure Event Hubs?
+- Partitions in Azure Event Hubs are the mechanism used for scaling and distributing the data being ingested. Each partition represents a subset of the data stream and can handle a certain amount of throughput. Multiple partitions can be used to handle larger volumes of data.
+
+4. How do you manage and monitor Azure Event Hubs?
+- Azure Event Hubs can be managed and monitored through the Azure portal, Azure CLI, or through REST APIs. Additionally, there are various tools available such as Azure Monitor, Azure Event Hubs Capture, and Azure Stream Analytics to monitor and analyze data.
+
+5. What are the authentication options available for Azure Event Hubs?
+- Azure Event Hubs supports various authentication mechanisms such as Shared Access Signatures (SAS) and Azure Active Directory (AD) authentication. SAS is typically used for individual consumer clients, while AD is used for more secure and scalable scenarios.
+
+6. How does Azure Event Hubs handle data retention and archiving?
+- Azure Event Hubs offers different options for retention and archiving of data, including the ability to store data in a specified Azure Storage account and the ability to configure a retention time for data in the event hub. Archiving can also be achieved through integration with Azure Data Lake Storage or Azure Data Explorer.
+
+7. Can you explain how to manage deployments using Azure Event Hubs?
+- Deployments in Azure Event Hubs can be managed using Azure Resource Manager (ARM) templates, Azure CLI, PowerShell, or the Azure portal. These tools allow for the creation and management of event hubs, namespaces, and other resources.
+
+8. How do you handle disaster recovery for Azure Event Hubs?
+- Azure Event Hubs supports geo-disaster recovery through its geo-disaster recovery feature. This ensures that in the event of a disaster at the primary location, the secondary location can take over and continue processing data.
+
+9. Can you explain the concept of capture in Azure Event Hubs and how it is beneficial?
+- Azure Event Hubs Capture is a feature that allows for the automatic capture of streaming data into an Azure Storage account. This data can then be used for further analysis or processing using tools like Azure Stream Analytics. It provides a cost-effective and scalable way to store and process large volumes of data.
+
+10. How does Azure Event Hubs integrate with other Azure services?
+- Azure Event Hubs integrates with other Azure services such as Azure Functions, Azure Data Factory, and Azure Databricks. These integrations allow for the seamless flow of data between different Azure services and enable data processing and analysis at scale.
+
+## Technical Discussion Topics:
+- Azure Event Hubs architecture and scalability
+- Data retention and archiving options in Azure Event Hubs
+- Disaster recovery and high availability considerations
+- Real-time data ingestion and processing using Azure Event Hubs
+- Integration with other Azure services and tooling
+- Best practices for managing and monitoring Azure Event Hubs
+- Security and authentication options for Azure Event Hubs
+- Leveraging Azure Event Hubs for event-driven architectures
+- Use cases and real-world examples of Azure Event Hubs implementation
+- Future developments and updates for Azure Event Hubs.

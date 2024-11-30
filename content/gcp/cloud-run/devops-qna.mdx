@@ -1,0 +1,41 @@
+
+
+Technical Interview Questions:
+1. Can you explain the main benefits of using Cloud Run for deployment management?
+- Scalability and high availability
+- Automatic scaling up and down based on traffic
+- Integration with other Google Cloud services
+- Pay-per-use pricing model
+
+2. How do you handle logging and monitoring in Cloud Run deployments?
+- Cloud Run automatically streams logs to Stackdriver, allowing for real-time monitoring and troubleshooting
+- Can set up alerts and notifications for specific events or metrics
+- Can also use third-party monitoring tools for more advanced monitoring capabilities
+
+3. How would you handle rolling out updates to a Cloud Run service without causing downtime?
+- Use blue-green deployments, where a new version is deployed alongside the current version and traffic is gradually shifted to the new version
+- Implement a canary release strategy, where a small percentage of traffic is directed to the new version and gradually increased based on performance and stability
+- Create backups of the current version in case of any issues and quickly roll back if necessary
+
+4. Can you explain how Cloud Run integrates with other Google Cloud services?
+- Can be used with Cloud Build for continuous integration and deployment
+- Can be integrated with Cloud Load Balancing for managing incoming traffic
+- Can be connected to Cloud Pub/Sub for event-driven architecture
+- Can be used with Cloud Firestore for data storage and retrieval
+
+5. How do you handle security in Cloud Run deployments?
+- Can use Cloud IAM to manage access control and permissions for users and service accounts
+- Can utilize Cloud Identity-Aware Proxy to control access to the service at the network level
+- Can set up SSL certificates for encrypted communication between clients and the service
+
+Technical Discussion Topics:
+- Best practices for optimizing performance and scalability in Cloud Run deployments
+- Handling secrets and sensitive data in a Cloud Run service
+- Integrating Cloud Run with other serverless tools such as Cloud Functions and App Engine
+- Limitations and constraints of using Cloud Run for deployment management
+- Troubleshooting common issues and errors in Cloud Run
+- Strategies for managing and deploying multiple versions of a service in Cloud Run
+- Incorporating CI/CD pipelines with Cloud Run for a seamless development process
+- Comparing Cloud Run to other serverless options like AWS Lambda and Azure Functions
+- Implementing auto-scaling based on metrics and custom triggers in Cloud Run
+- Securing and protecting Cloud Run services against potential attacks and vulnerabilities.

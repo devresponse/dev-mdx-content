@@ -1,0 +1,41 @@
+
+
+# Technical Interview Questions for DevOps Engineer - Compute Engine Division
+
+1. What is Compute Engine and how does it differ from other cloud computing platforms?
+    - Compute Engine is a high-performance, scalable, and flexible cloud computing platform provided by Google Cloud. It allows users to create and manage virtual machines on Google's infrastructure. Compared to other platforms, Compute Engine offers a wider range of machine types and pricing options, as well as better integration with other Google Cloud services.
+
+2. Can you explain the process of creating a virtual machine on Compute Engine?
+    - To create a virtual machine, you need to first select the desired machine type, operating system, and other specifications. Then, you need to configure the networking options, such as setting up firewalls and load balancers. After that, you can choose to deploy your VM in a specific region or availability zone. Finally, you can start or stop the VM, as well as manage its storage and scaling options.
+
+3. How does Compute Engine ensure high availability and reliability for virtual machines?
+    - Compute Engine uses a variety of techniques, such as automatic live migration, to ensure that virtual machines are always up and running. In case of hardware or software failures, the VM will be automatically moved to a different host without any downtime. Google also offers a 99.99% SLA for Compute Engine, which guarantees high availability and reliability for your applications.
+
+4. Can you describe the different disk options available on Compute Engine?
+    - Compute Engine offers three types of disks: standard persistent disk, SSD persistent disk, and local SSD. Standard persistent disks are ideal for storing data that is frequently accessed but not modified, while SSD persistent disks are faster and suitable for I/O-intensive applications. Local SSDs, on the other hand, are temporary and used for high-performance workloads that require low-latency storage.
+
+5. How does Compute Engine handle network security and access control?
+    - Compute Engine offers various security features, such as firewalls, network tags, and VPC (Virtual Private Cloud) networks, to ensure network security. Firewalls allow you to control inbound and outbound traffic to your VMs, while network tags allow you to group VMs and apply firewall rules to them. VPC networks provide secure connections between different VMs and other resources.
+
+6. How can you automate your deployment process using Compute Engine?
+    - Compute Engine offers various automation tools, such as Deployment Manager, Google Cloud SDK, and API, to help you automate your deployment process. Deployment Manager allows you to define and manage your infrastructure as code, while the SDK and API offer command-line and programmatic ways to manage your resources. You can also use third-party tools, such as Terraform and Ansible, to automate your deployments on Compute Engine.
+
+7. Can you explain the benefits of using Managed Instance Groups on Compute Engine?
+    - Managed Instance Groups (MIGs) allow you to create and manage a group of identical VMs on Compute Engine. This offers several benefits, such as auto-scaling, load balancing, and automatic healing. MIGs can automatically add or remove VMs based on the workload, distribute traffic, and replace any unhealthy instances, ensuring high availability and scalability for your applications.
+
+8. How does Compute Engine integrate with other Google Cloud services?
+    - Compute Engine integrates with other Google Cloud services, such as Cloud Storage, Cloud SQL, and Cloud DNS, to provide a holistic and integrated cloud computing experience. For example, you can use Compute Engine to store and serve files from Cloud Storage, or connect your VMs to a Cloud SQL database. This allows you to build powerful and complex applications on Google Cloud.
+
+9. Can you discuss the pricing structure of Compute Engine?
+    - Compute Engine offers a pay-as-you-go pricing model, where you only pay for the resources you use. The cost is calculated based on the VM size, disk type, network usage, and other factors. You can also choose to use preemptible VMs, which are offered at a significantly lower cost but may be terminated at any time. Options like sustained use discounts and committed use discounts can also help you save money on long-running workloads.
+
+10. How does Compute Engine handle disaster recovery and backups?
+    - Compute Engine offers several features, such as snapshots, images, and deployments, to ensure disaster recovery and backups for your VMs. Snapshots allow you to capture a state of your persistent disks and use them to restore or create new disks. Images are snapshots that can be used to create custom VMs, while deployments help you automate the creation and management of snapshots and images for disaster recovery purposes. 
+
+# Technical Discussion Topics for Compute Engine
+
+- Different types of machine types and their use cases.
+- Autoscaling and load balancing options offered by Compute Engine.
+- Best practices for designing a secure and highly available network architecture on Compute Engine.
+- Managing and optimizing VM storage on Compute Engine.
+- Integrating Compute Engine

@@ -1,0 +1,44 @@
+
+
+Technical Interview Questions and Expected Answers for Vercel Preview Deployments:
+
+1. Can you explain the difference between regular deployments and preview deployments on Vercel?
+
+Expected answer: Regular deployments are used for deploying a stable version of the application to production. Preview deployments, on the other hand, allow developers to deploy and preview changes in a separate environment before merging them into the main production codebase.
+
+2. How do you create a preview deployment on Vercel?
+
+Expected answer: To create a preview deployment, we need to first enable the "Preview Deployment" feature in the project settings. Then, we can use git push command with the flag --edge to create a preview deployment for a specific branch.
+
+3. Can you walk me through the process of setting up automated preview deployments on Vercel?
+
+Expected answer: Sure. We can set up automated preview deployments by configuring a webhook in the project settings that triggers a preview deployment every time a new pull request is opened. We can also specify any build or testing commands that need to be executed before the deployment.
+
+4. How do you manage access controls for preview deployments on Vercel?
+
+Expected answer: Access controls for preview deployments can be set up by creating separate teams with specific permissions in the project settings. We can then add team members to these teams to control their access to preview deployments.
+
+5. How does Vercel handle rollbacks for preview deployments?
+
+Expected answer: Vercel has a feature called "Atomic Deployments" which ensures that rollbacks are handled smoothly. If a problem occurs in a preview deployment, the previous version is automatically rolled back without affecting the production application.
+
+6. Can you explain how Vercel handles cache invalidation for preview deployments?
+
+Expected answer: Vercel uses a technique called "edge network invalidation" to handle cache invalidation for preview deployments. When a new preview deployment is created, the edge network is invalidated, ensuring that the latest version of the application is served to the users.
+
+7. How does Vercel ensure secure preview deployments?
+
+Expected answer: Vercel uses TLS encryption for all preview deployments to ensure secure communication between the server and the client. Additionally, it also offers features like custom domains, HTTPS enforcement, and secret management to enhance security.
+
+Technical Discussion Topics for Vercel Preview Deployments:
+
+1. The impact of Vercel Preview Deployments on the development workflow.
+2. Best practices for setting up automated preview deployments on Vercel.
+3. The role of Vercel Preview Deployments in continuous integration and continuous delivery (CI/CD).
+4. How Vercel handles scalability and load balancing for preview deployments.
+5. The role of Vercel's edge network in improving performance for preview deployments.
+6. Managing multiple preview deployments for different branches and pull requests.
+7. The potential challenges and limitations of using Vercel Preview Deployments.
+8. Integrating third-party tools and services with Vercel Preview Deployments.
+9. Security considerations and best practices for Vercel Preview Deployments.
+10. The future of Vercel Preview Deployments and its potential impact on the development process.

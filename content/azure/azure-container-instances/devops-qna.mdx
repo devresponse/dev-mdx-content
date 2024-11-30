@@ -1,0 +1,53 @@
+
+
+## Technical Interview Questions for DevOps Engineer:
+
+1. What is Azure Container Instances (ACI) and how is it different from Azure Container Service (ACS)?
+- ACI is a serverless, lightweight container engine that supports the deployment of containerized applications on Azure. 
+- Unlike ACS, ACI does not require the user to manage underlying virtual machine infrastructure, making it more efficient and cost-effective.
+
+2. Can you explain the difference between a container and a virtual machine (VM)?
+- A container is a lightweight, isolated package that contains an application and its dependencies, while a VM is an abstraction of a physical server with its own operating system and resources.
+- Containers offer faster and more efficient resource utilization compared to VMs.
+
+3. How does ACI handle scaling and availability of containers?
+- ACI automatically scales up or down based on the load of the application, and provides high availability through its fault-tolerant design.
+- ACI also offers the option to specify a maximum and minimum number of containers to maintain at all times.
+
+4. How would you deploy a container in Azure using ACI?
+- To deploy a container in ACI, you need to create a container group in the Azure portal or through CLI commands.
+- You can specify the image, CPU and memory resources, and networking settings for the container group.
+
+5. Can you explain the difference between ACI and Azure Kubernetes Service (AKS)?
+- While ACI is more suitable for deploying individual containers, AKS is a full-fledged orchestration service for managing multiple containers in a cluster.
+- AKS offers more advanced features such as automatic scaling, self-healing, and rolling updates, but also requires the user to manage the underlying VM infrastructure.
+
+6. How does ACI handle network communication between containers?
+- ACI offers a built-in virtual network that allows containers within the same container group to communicate with each other.
+- For communication with external resources, ACI provides an external IP address and supports load balancing and DNS name resolution.
+
+7. Can you explain the concept of Azure Container Instances container groups?
+- A container group is a logical grouping of containers deployed in ACI.
+- You can specify resource limits, networking settings, and other configurations for all containers within the group.
+- Container groups allow for deploying multi-container applications and managing them as a single entity.
+
+8. How does ACI integrate with other Azure services?
+- ACI integrates with Azure Active Directory (Azure AD) for authentication and authorization.
+- It also supports integration with Azure Monitor for monitoring and alerting, and Azure Storage for persistent storage.
+
+9. How would you handle secret management for containers deployed in ACI?
+- ACI offers the Secret Volume feature which allows for mounting secrets from Azure Key Vault directly into the container's file system.
+- Alternatively, secrets can be stored as environment variables and passed into the container through the command line or during deployment.
+
+10. How would you troubleshoot an issue with a container deployed in ACI?
+- You can use the Azure portal or CLI to view container logs and metrics for troubleshooting.
+- You can also SSH into the container to perform manual debugging or use Azure Monitor and Log Analytics for more advanced monitoring and troubleshooting.
+
+## Technical Discussion Topics for Azure Container Instances:
+
+- Use cases for deploying containers using ACI
+- Performance and cost comparison between ACI and other Azure container services
+- How ACI integrates with CI/CD pipelines and DevOps workflows
+- Best practices for managing and orchestrating multiple container groups in ACI
+- Security considerations when deploying containers in ACI
+- Limitations of ACI and when it might not be the best option for container deployment

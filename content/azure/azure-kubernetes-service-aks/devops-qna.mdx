@@ -1,0 +1,51 @@
+
+
+Technical Interview Questions:
+
+1. Can you explain what AKS is and its main features and benefits?
+- AKS is a container orchestration service provided by Azure. Its main features include:
+  - Automated cluster deployment and scaling
+  - Integration with other Azure services
+  - Support for various container runtimes, including Docker and CRI-O
+  - Ability to deploy and manage applications across multiple environments
+  - Built-in monitoring and logging capabilities
+- Some key benefits of using AKS are:
+  - Easy and quick deployment of containerized applications
+  - Improved scalability, availability, and security of applications
+  - Reduced operational overhead and cost
+  - Integration with other Azure services for added functionality
+
+2. How would you set up an AKS cluster and deploy an application on it?
+- To set up an AKS cluster, you would need to:
+  - Create a resource group in Azure to contain the cluster
+  - Use the Azure CLI or Azure Portal to create the AKS cluster
+  - Specify the desired cluster settings, such as node size, number of nodes, and Kubernetes version
+  - Wait for the cluster to be provisioned.
+- To deploy an application on the AKS cluster, you would need to:
+  - Create a deployment file (deployment.yaml) specifying the application's container image, replicas, and other settings.
+  - Use the kubectl command to apply the deployment file to the cluster.
+  - Optionally, create a service to expose the application externally.
+
+3. How would you scale an AKS cluster?
+- AKS supports both manual and automatic scaling of clusters. To manually scale an AKS cluster, you can use the Azure portal or Azure CLI to increase or decrease the number of nodes in the cluster.
+- For automatic scaling, AKS provides the Horizontal Pod Autoscaler (HPA) feature, which adjusts the number of pods based on CPU usage or other metrics defined by the user.
+
+4. Can you explain the difference between a node pool and a node in AKS?
+- A node pool is a collection of nodes in an AKS cluster that have the same configuration and are managed together. A node, on the other hand, is a virtual machine that runs Kubernetes and hosts application workloads.
+- A cluster can have multiple node pools with different configurations, allowing for better resource utilization and management. Nodes within a pool can be added or removed based on the desired number of pods and the allocated resources.
+
+5. How would you configure network policies in AKS?
+- Network policies in AKS can be configured using Network Policy (NP) plugins. There are multiple NP plugins supported in AKS, such as Calico, Azure Kubernetes Network Policy, and Azure Container Networking Interface (CNI). These plugins enable you to define and enforce network policies for pods within the cluster. The configuration process for each plugin may vary, but they all essentially use Kubernetes network policy specifications to enforce policies.
+
+Technical Discussion Topics:
+
+1. High Availability and Disaster Recovery strategies for AKS
+2. Load Balancing and Traffic Management in AKS
+3. Security best practices for AKS clusters
+4. Monitoring and Logging in AKS
+5. CI/CD pipelines and deployment strategies for AKS applications
+6. Integrating AKS with other Azure services such as Azure Container Registry, Azure Key Vault, and Azure Monitor
+7. Implementing RBAC and Role-based Access Control in AKS
+8. Configuration Management and Infrastructure as Code with AKS
+9. Kubernetes Operators and their use cases in AKS
+10. Managing persistent storage for stateful applications in AKS.

@@ -1,0 +1,46 @@
+
+
+## Technical Interview Questions:
+
+1. Can you explain the role of Bigtable in Google Cloud Platform and how it differs from traditional databases?
+- Bigtable is a NoSQL database that is designed for scalability and high-performance. It differs from traditional databases in its distributed architecture and column-oriented approach to data storage.
+
+2. How does Bigtable handle data storage and retrieval?
+- Bigtable uses a key-value pair data model for storage and retrieval. The data is stored in a column-oriented format and can be retrieved using a unique row key.
+
+3. What is the purpose of Bloom filters in Bigtable and how do they work?
+- Bloom filters are used in Bigtable to quickly identify whether a row key exists in a specific column family. They work by creating a bit array that is used to indicate the presence or absence of a row key.
+
+4. Can you explain the role of Google Colossus in Bigtable's storage architecture?
+- Google Colossus is the underlying storage system for Bigtable. It provides a distributed file system that allows Bigtable to store and retrieve large amounts of data efficiently.
+
+5. How does Bigtable handle data replication and consistency?
+- Bigtable uses a master-slave architecture for data replication, where the master node handles all read and write requests and distributes them to the slave nodes. Consistency is maintained through the use of timestamps and the Quorum algorithm.
+
+6. How does Bigtable handle access control and security?
+- Bigtable uses Google Cloud IAM roles and permissions to control access to data. It also offers client-side encryption for an extra layer of security.
+
+7. Can you explain the role of Tablet Servers in Bigtable and how they handle data storage?
+- Tablet Servers are responsible for storing and retrieving data in Bigtable. They are assigned a specific range of row keys and handle reads and writes for all the data within that range.
+
+8. How does Bigtable handle node failures and data rebalancing?
+- Bigtable uses a distributed architecture to handle node failures. When a node fails, the data is automatically redistributed to the remaining nodes, keeping the system running smoothly.
+
+9. Can you explain how Bigtable handles sorting and filtering of data?
+- Bigtable offers the ability to sort and filter data based on column keys and values. This is achieved through the use of filters and row range scans.
+
+10. What are some best practices for designing a schema in Bigtable?
+- Some best practices include denormalizing data and using a row key that evenly distributes data across the cluster. It is also recommended to limit the number of column families in a table and avoid frequent schema changes.
+
+## Technical Discussion Topics:
+
+1. Bigtable's role in Google Cloud Platform and its benefits for large-scale applications.
+2. Comparing and contrasting Bigtable with traditional relational databases.
+3. Bigtable's architecture and how it handles data storage and retrieval.
+4. The benefits of using Bloom filters in Bigtable and how they contribute to data efficiency.
+5. Google Colossus and its role in Bigtable's distributed storage system.
+6. Strategies for maintaining data consistency in a distributed system like Bigtable.
+7. Access control and security features in Bigtable and their importance in enterprise applications.
+8. Scalability and fault tolerance in Bigtable, and how it handles node failures.
+9. Techniques for optimizing data retrieval, such as caching and row range scans.
+10. Real-world use cases for Bigtable and how it remains a popular choice for big data applications.

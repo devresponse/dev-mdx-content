@@ -1,0 +1,46 @@
+
+Technical Questions:
+
+1. What is Azure Event Grid and how does it work?
+Expected answer: Azure Event Grid is a fully managed event routing service that enables developers to react to events in Azure or other cloud services. It uses a publish-subscribe model and can route events to different destinations such as Azure Functions, Logic Apps, or WebHooks.
+
+2. Can you explain the difference between an event and a message in Azure Event Grid?
+Expected answer: An event in Azure Event Grid is a JSON object that contains information about a specific occurrence or change in a system. A message, on the other hand, is a specific type of event that is used to transmit data from one service to another within the event-driven architecture of Azure Event Grid.
+
+3. How do you create an event subscription in Azure Event Grid?
+Expected answer: An event subscription can be created through the Azure Portal, Azure CLI, or through API calls. It requires specifying a topic (source of events), an endpoint (where the events will be sent), and filters (optional) to select specific events.
+
+4. Can you explain what an event handler is and how it is used in Azure Event Grid?
+Expected answer: An event handler is a piece of code or logic that is triggered when an event is received by Azure Event Grid. It is responsible for processing the event data and taking appropriate actions, such as executing a function or calling an API.
+
+5. What are the different delivery patterns supported by Azure Event Grid?
+Expected answer: Azure Event Grid supports three delivery patterns: push, pull, and hybrid. In push delivery, Azure Event Grid pushes events to the specified endpoint. In pull delivery, the endpoint needs to pull events from Azure Event Grid using a REST API call. Hybrid delivery is a combination of push and pull methods.
+
+6. How do you secure Azure Event Grid?
+Expected answer: Azure Event Grid uses Azure AD for authentication and role-based access control (RBAC) for authorization. The access control can be managed through the Azure Portal, Azure CLI, or API calls.
+
+7. Can you integrate Azure Event Grid with other Azure services? If yes, can you give an example?
+Expected answer: Yes, Azure Event Grid can be integrated with other Azure services such as Azure Functions, Logic Apps, and Azure Automation. For example, you can use Azure Event Grid to trigger a function when a new file is added to a storage account.
+
+8. How can you handle retries and dead-lettering in Azure Event Grid?
+Expected answer: Retries and dead-lettering can be configured in the event subscription settings. You can specify the number of retries, the time interval between retries, and the destination for dead-letter events.
+
+9. What is the difference between Azure Event Grid and Azure Service Bus?
+Expected answer: Azure Event Grid is a fully managed, serverless event routing service, while Azure Service Bus is a messaging service used for communication between applications. Azure Event Grid is designed for event-driven architectures, whereas Azure Service Bus is more suited for asynchronous messaging.
+
+10. Can you explain the concept of dead-lettering in Azure Event Grid?
+Expected answer: Dead-lettering is a mechanism used to handle events that cannot be delivered to the specified endpoint after the configured number of retries. These events are sent to a dead-letter endpoint where they can be analyzed and processed separately.
+
+Technical Discussion Topics:
+
+- Understanding of event-driven architectures
+- Working with Azure Event Grid topics, subscriptions, and filters
+- Integration with other Azure services
+- Security and authentication in Azure Event Grid
+- Monitoring and troubleshooting events in Azure Event Grid
+- Scalability and performance considerations
+- Best practices for managing deployments using Azure Event Grid
+- Use cases for Azure Event Grid in a cloud-based environment
+- Comparison with other event routing services or messaging services
+- Working with different delivery patterns (push, pull, hybrid)
+- Event handling and processing using event handlers.

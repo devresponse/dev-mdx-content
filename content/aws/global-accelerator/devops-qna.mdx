@@ -1,0 +1,26 @@
+
+
+Technical Interview Questions:
+
+1. What is Global Accelerator and how does it work?
+Expected answer: Global Accelerator is a network service offered by Amazon AWS that helps improve the availability and performance of applications by directing end users to the closest available application endpoint. This is achieved by using the AWS global network to route traffic to the optimal AWS region, based on factors such as application health, location, and network congestion.
+
+2. How do you set up Global Accelerator for an application?
+Expected answer: To set up Global Accelerator for an application, the first step is to create an accelerator and associate it with the application's network load balancer. Then, create endpoint groups for each region where the application is deployed, and add the relevant endpoints to each group. Finally, update the DNS settings for the application's domain to point to the accelerator's static IP addresses.
+
+3. How does Global Accelerator handle failover scenarios?
+Expected answer: In the event of an endpoint failure, Global Accelerator automatically routes traffic to the next closest healthy endpoint within the same endpoint group. If all endpoints within the group are unhealthy, traffic will be routed to the next closest healthy endpoint group.
+
+4. Can you explain how Global Accelerator optimizes network traffic?
+Expected answer: Global Accelerator uses the AWS global network to automatically route traffic to the closest AWS region. In addition, it uses the Internet Protocol (IP) Anycast function to direct traffic to the optimal endpoint within the region, based on factors such as network congestion and endpoint health.
+
+5. How does Global Accelerator handle sudden spikes in traffic?
+Expected answer: Global Accelerator uses the Elastic IP addresses to dynamically scale up and allocate more bandwidth for an application, enabling it to handle sudden spikes in traffic. This ensures that the application can maintain high performance and availability even during high traffic periods.
+
+Technical Discussion Topics:
+
+1. Performance optimization strategies for applications using Global Accelerator.
+2. Deploying Global Accelerator with Elastic Load Balancing (ELB) for improved availability.
+3. Best practices for using Global Accelerator with AWS Auto Scaling to handle varying traffic loads.
+4. Incorporating Global Accelerator into a multi-region deployment strategy for improved global reach.
+5. Integrating Global Accelerator with other AWS services such as Amazon CloudFront and Amazon Route 53 for a well-rounded application delivery solution.

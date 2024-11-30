@@ -1,0 +1,39 @@
+
+
+# Technical Interview Questions for DevOps Engineer – Azure Firewall
+
+1. What experience do you have with deploying and managing Azure Firewall in a production environment?
+- Answer: I have experience setting up and managing Azure Firewall in a production environment for various clients. This includes creating and configuring firewall rules, monitoring and troubleshooting network traffic, and ensuring high availability for the firewall.
+
+2. Can you explain the different deployment models available for Azure Firewall?
+- Answer: There are two deployment models for Azure Firewall: Standalone and High Availability. In the standalone model, a single firewall instance is deployed for a single virtual network. In the high availability model, two firewalls are deployed in an active-passive configuration for high availability.
+
+3. How do you recommend setting up network address translation (NAT) rules in Azure Firewall?
+- Answer: I recommend using the destination NAT feature in Azure Firewall, which allows for port forwarding for incoming traffic to specific internal resources. This ensures that only necessary ports are open in the firewall and helps improve security.
+
+4. How would you handle traffic for virtual machines (VMs) that are not deployed in the same virtual network as the Azure Firewall?
+- Answer: I would use user-defined routes to redirect traffic from these VMs to the Azure Firewall. This allows for centralized traffic control and ensures all network traffic goes through the firewall for inspection.
+
+5. How do you troubleshoot network traffic issues with Azure Firewall?
+- Answer: I would start by checking the firewall logs to identify any blocked traffic. Then, I would review the firewall rules and network security groups (NSGs) to determine if the traffic is being blocked by the firewall. If necessary, I would use network tracing tools to further investigate the issue.
+
+6. Can you explain the role of Azure Firewall Policies and how they are used?
+- Answer: Azure Firewall Policies allow for centralized management and application of firewall rules across multiple Azure Firewall instances. They can be used to standardize security policies for different virtual networks and to simplify management for large-scale deployments.
+
+7. How do you ensure high availability for Azure Firewall in a production environment?
+- Answer: I would deploy Azure Firewall in the High Availability mode and configure an Azure Load Balancer to distribute traffic between the active and passive instances. Additionally, I would regularly monitor the firewall health and conduct failover tests to ensure high availability.
+
+8. How would you integrate Azure Firewall with other Azure services, such as Azure Monitor and Azure Security Center?
+- Answer: Azure Firewall can be integrated with Azure Monitor to track and analyze network traffic patterns and identify potential security threats. It can also be integrated with Azure Security Center to provide additional security recommendations and threat detection.
+
+# Technical Discussion Topics for Azure Firewall
+
+- Overview and features of Azure Firewall
+- Architecture and deployment models for Azure Firewall
+- How to create and manage firewall rules in Azure Firewall
+- Network address translation (NAT) and user-defined routes in Azure Firewall
+- Monitoring and troubleshooting network traffic in Azure Firewall
+- Azure Firewall Policies and their role in centralized management
+- High availability and scalability of Azure Firewall
+- Integrating Azure Firewall with other Azure services for enhanced security
+- Best practices for securing and managing Azure Firewall in a production environment

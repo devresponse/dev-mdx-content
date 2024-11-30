@@ -1,0 +1,56 @@
+
+
+# Technical Interview Questions and Answers for DevOps Engineer - Google Cloud Platform
+
+1. What is Cloud Debugger and how does it work?
+
+- Cloud Debugger is a Google Cloud Platform service that helps developers debug applications in production without interrupting their live traffic. It captures snapshots of code at any point in time and allows developers to inspect variables, stack traces and threads.
+
+2. How do you enable Cloud Debugger for an application?
+
+- To enable Cloud Debugger, the application must first be deployed on Google Cloud Platform. Then, the debugger must be installed on the application's virtual machine instance using the Google Cloud Debugger Agent.
+
+3. What are the different ways to capture a snapshot in Cloud Debugger?
+
+- There are three ways to capture a snapshot in Cloud Debugger: setting a snapshot point in the code, using the debugger API, or setting up a conditional snapshot trigger.
+
+4. Can you explain how conditional snapshot triggers work?
+
+- Conditional snapshot triggers are set up based on specific conditions in the code, such as when a certain function is called or when a variable reaches a certain value. When the condition is met, a snapshot will be captured for debugging.
+
+5. How does Cloud Debugger handle applications with multiple instances or servers?
+
+- Cloud Debugger uses a distributed snapshot collection system to handle applications with multiple instances or servers. Each instance will have its own snapshot collector, and all snapshots will be aggregated in the Cloud Debugger console.
+
+6. Can you debug applications running on any programming language with Cloud Debugger?
+
+- No, Cloud Debugger currently only supports applications running on Java, Node.js, and Python.
+
+7. How does Cloud Debugger work with log statements?
+
+- Cloud Debugger can integrate with logging tools such as Stackdriver Logging. When a snapshot is captured, the corresponding log statements can be viewed in the Cloud Debugger console, providing more context for debugging.
+
+8. How do you troubleshoot common issues with Cloud Debugger?
+
+- Some common issues with Cloud Debugger include incorrect installation of the debugger agent, not having the appropriate IAM permissions, or insufficient network connectivity. These issues can be troubleshooted using the Cloud Debugger documentation and logs.
+
+9. Can you explain the process of debugging a snapshot in Cloud Debugger?
+
+- Once a snapshot is captured, it can be viewed in the Cloud Debugger console. From there, developers can inspect variables, analyze stack traces, and add log points for further debugging. The snapshot can also be downloaded for analysis in a local environment.
+
+10. What are the security measures in place for Cloud Debugger?
+
+- Cloud Debugger uses encryption at rest and in transit to ensure the security of the captured snapshots. It also follows Google Cloud's strict security policies and practices.
+
+# Technical Discussion Topics for Cloud Debugger
+
+- Benefits of using Cloud Debugger for live debugging in production
+- Comparison of Cloud Debugger with other debugging tools on the market
+- Use cases and real-world examples of successful debugging with Cloud Debugger
+- Integration of Cloud Debugger with other Google Cloud services, such as Stackdriver Logging and Monitoring
+- Best practices for setting up snapshot points and triggers to minimize the impact on application performance
+- Limitations and current challenges of using Cloud Debugger
+- Roadmap for future updates and improvements to Cloud Debugger
+- How Cloud Debugger addresses common debugging challenges, such as debugging distributed applications or applications with high traffic volume
+- Scalability and cost considerations when using Cloud Debugger
+- How to effectively use log statements with Cloud Debugger for more efficient debugging.

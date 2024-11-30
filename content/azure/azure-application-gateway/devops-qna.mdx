@@ -1,0 +1,49 @@
+
+
+## Technical Interview Questions for Devops Engineer
+
+1. What are the key features of Azure Application Gateway and how does it differ from other load balancers in Azure?
+
+Expected Answer: Azure Application Gateway is a layer 7 load balancer that is specifically designed to manage and route web application traffic. It has the ability to provide SSL/TLS termination, cookie-based session affinity, URL-based routing, and Web Application Firewall (WAF) capabilities. Unlike other load balancers in Azure, it works at the application layer, providing more flexibility and control over traffic routing.
+
+2. How do you handle backend server failure in Azure Application Gateway?
+
+Expected Answer: Azure Application Gateway uses a health probe mechanism to detect server failures. If a backend server fails the health probe multiple times, it will be removed from the rotation. If the server recovers, it will be added back to the rotation. This ensures that the traffic is routed only to healthy servers.
+
+3. How do you configure SSL offloading in Azure Application Gateway?
+
+Expected Answer: To configure SSL offloading, you need to upload an SSL certificate to the application gateway and then configure the backend pool and listener to use that certificate. The certificate will be used to terminate the SSL connection and then the traffic will be forwarded to the backend servers in plaintext.
+
+4. Can you explain the process of URL-based routing in Azure Application Gateway?
+
+Expected Answer: URL-based routing allows you to route traffic based on the URL path of the request. This is useful for directing traffic to specific backend servers based on their functionality. To configure URL-based routing, you need to create a listener and specify the path match condition. Then you need to add a rule to the listener which specifies the backend pool to route the traffic to.
+
+5. How do you set up autoscaling for Azure Application Gateway?
+
+Expected Answer: Azure Application Gateway supports autoscaling by adding or removing backend servers based on the CPU utilization of the servers. This can be configured by setting up autoscaling rules in the gateway configuration. When the CPU utilization threshold is met, the gateway will automatically add or remove backend servers to handle the increased or decreased load.
+
+6. How does Azure Application Gateway integrate with Azure Web Application Firewall (WAF)?
+
+Expected Answer: Azure Application Gateway integrates with Azure WAF to provide an added layer of security for web applications. The WAF policies can be configured and applied to the application gateway, allowing it to inspect incoming traffic and block any malicious requests. This helps protect web applications from common attacks such as SQL injection and cross-site scripting.
+
+7. How do you handle SSL certificate rotation in Azure Application Gateway?
+
+Expected Answer: Azure Application Gateway supports SSL certificate rotation without any downtime. You can upload a new certificate to the gateway and specify it as the active certificate. The gateway will then use the new certificate for all incoming traffic while the old certificate is phased out.
+
+8. How do you troubleshoot issues with Azure Application Gateway?
+
+Expected Answer: There are a few steps you can take to troubleshoot issues with Azure Application Gateway. First, you can check the health probes to see if any backend servers are failing. You can also check the logs to see if there are any errors or warnings. Additionally, you can use diagnostic tools like Application Gateway Analytics or Azure Network Watcher to identify and resolve issues.
+
+## Technical Discussion Topics for Azure Application Gateway
+
+- Overview of Azure Application Gateway: Key features and benefits
+- Common use cases for Azure Application Gateway
+- Differences between Azure Application Gateway and other load balancers in Azure
+- Best practices for configuring and managing Azure Application Gateway
+- Automation and integration options for Azure Application Gateway in a DevOps environment
+- Performance optimization strategies for Azure Application Gateway
+- Comparison between Azure Application Gateway and other WAF solutions
+- Security features and capabilities of Azure Application Gateway
+- Advanced configurations and scenarios for Azure Application Gateway, such as using path-based routing or configuring custom health probes
+- Monitoring and troubleshooting techniques for Azure Application Gateway
+- Cost management and cost optimization strategies for Azure Application Gateway deployment.

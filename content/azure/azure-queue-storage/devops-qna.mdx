@@ -1,0 +1,38 @@
+
+
+# Technical Interview Questions:
+1. Can you explain the purpose and use case of Azure Queue Storage?
+- Azure Queue Storage is a service that allows for asynchronous messaging between applications and services within the Azure platform. It is commonly used for decoupling and scaling applications, as well as facilitating communication between front-end and back-end processes.
+
+2. How would you handle replication and durability in Azure Queue Storage?
+- Azure Queue Storage automatically replicates messages across multiple storage nodes for durability. If the primary node fails, a secondary node will take over to ensure continuity and reliability of message delivery.
+
+3. Can you walk me through the process of setting up and configuring Azure Queue Storage?
+- Sure, first we would need to create a storage account and then enable the Queue service for that account. We can then use a key or SAS token to access the queue. From there, we can create a queue and configure its properties, such as visibility timeout and message retention.
+
+4. How does Azure Queue Storage handle large messages? 
+- Azure Queue Storage has a maximum message size of 64KB. If a message larger than this needs to be sent, we can use message chunking or store the message in a different type of storage (such as Blob storage) and send a reference to it through the queue.
+
+5. How would you handle priority queues in Azure Queue Storage?
+- Azure Queue Storage does not natively support priority queues, but we can simulate this functionality by assigning a specific prefix or key to messages that indicate their priority level. The receiving application can then use this information to prioritize the processing of messages.
+
+6. Can you explain the concept of leasing in Azure Queue Storage? 
+- Leasing in Azure Queue Storage allows a single client to have exclusive access to a queue message for a specific period of time. This prevents other processes from modifying or deleting the message while the client is working on it.
+
+7. How would you monitor and troubleshoot issues with Azure Queue Storage?
+- We can use Azure Monitor to track metrics and diagnose any errors or performance issues with Azure Queue Storage. We can also enable diagnostic logging to get detailed information on requests and errors.
+
+8. Can you discuss any security considerations when using Azure Queue Storage?
+- We can ensure secure access to Azure Queue Storage by using SAS tokens, which can be set to expire after a specified time. We can also restrict access to specific IP addresses and configure access control lists (ACLs) for finer-grained control.
+
+# Technical Discussion Topics:
+- Differences between Azure Queue Storage and Azure Service Bus
+- Best practices for scalability and performance in Azure Queue Storage
+- Integrating Azure Queue Storage with different programming languages and frameworks
+- Error handling and retry policies in Azure Queue Storage
+- Use cases for using Azure Queue Storage in a microservices architecture
+- Comparison with other similar messaging services, such as Azure Event Hubs and Azure Storage Queues
+- Multi-region replication and disaster recovery for Azure Queue Storage
+- Using Azure Functions to process messages from Azure Queue Storage
+- Best practices for securing data in transit and at rest in Azure Queue Storage
+- Limitations and constraints of Azure Queue Storage in terms of message size and frequency 

@@ -1,0 +1,45 @@
+
+## Technical Interview Questions:
+
+1. What is Azure Managed Disks and how does it differ from unmanaged disks?
+- Azure Managed Disks is a cloud storage service that simplifies the management of virtual machine disks. Unlike unmanaged disks, managed disks handle the storage account management and provide built-in features such as snapshots and disk encryption.
+
+2. How does Azure Managed Disks affect the scalability of virtual machines?
+- Azure Managed Disks allows you to easily scale your virtual machine deployment without having to worry about storage account limits. As you add or remove disks from a virtual machine, the underlying storage automatically scales to accommodate the changes.
+
+3. How do you manage access to Azure Managed Disks?
+- Access to managed disks can be controlled through role-based access control (RBAC) in Azure Active Directory. This allows for granular control over who can manage and access the disks.
+
+4. Can you resize an existing Azure Managed Disk?
+- Yes, you can resize an existing Azure Managed Disk by changing the disk size through the Azure portal or using Azure PowerShell. The virtual machine connected to the disk will need to be stopped before resizing can occur.
+
+5. How does Azure Managed Disks handle data replication?
+- Managed Disks have built-in replication for high availability. By default, data is replicated within the same region, but can also be replicated across regions for disaster recovery purposes.
+
+6. Can you attach multiple virtual machines to a single Azure Managed Disk?
+- No, managed disks can only be attached to a single virtual machine at a time.
+
+7. How does Azure Managed Disks handle encryption?
+- Managed Disks can be encrypted using Azure Disk Encryption, which uses industry-standard BitLocker encryption. This ensures that all data on the disk is encrypted at rest.
+
+8. How do you monitor the performance and health of Azure Managed Disks?
+- Performance and health of managed disks can be monitored through Azure Monitor, which provides metrics and alerts for disk usage, IOPS, and latency.
+
+9. Can you use Azure Managed Disks with other Azure services?
+- Yes, managed disks can be used with other Azure services such as virtual machines, virtual machine scale sets, and even Azure Backup.
+
+10. How does Azure Managed Disks handle snapshot backups?
+- Managed Disks provide a built-in feature for taking snapshots, which are point-in-time backups of a disk. These snapshots can then be used to create new disks or restore existing disks.
+
+## Technical Discussion Topics:
+
+1. Different types of disks available in Azure (Standard vs. Premium).
+2. Use cases for using Azure Managed Disks in a production environment.
+3. How Azure Managed Disks integrates with other Azure services such as Azure Virtual Machines and Azure Backup.
+4. Strategies for optimizing Azure Managed Disk performance.
+5. Best practices for managing access and security for Azure Managed Disks.
+6. Ways to control costs and optimize storage usage with Azure Managed Disks.
+7. High availability and disaster recovery options for Azure Managed Disks.
+8. Troubleshooting common issues with Azure Managed Disks.
+9. Future developments and updates planned for Azure Managed Disks.
+10. Comparing Azure Managed Disks to similar services offered by other cloud providers.

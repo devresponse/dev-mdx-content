@@ -1,0 +1,36 @@
+
+**Technical Questions:**
+1. What experience do you have with Azure Backup and its integration with other Azure services?
+2. Can you explain the different types of backups available in Azure Backup and when each one should be used?
+3. How would you handle a backup failure in Azure Backup? 
+4. How do you monitor and troubleshoot backups in Azure Backup?
+5. What are the best practices for setting up backup policies in Azure Backup?
+6. What are the security features available in Azure Backup for data protection?
+7. How do you manage retention policies for backups in Azure Backup?
+8. Can you walk us through the process of restoring a backup from Azure Backup?
+9. How do you ensure compliance and regulatory requirements while using Azure Backup?
+10. What is the difference between incremental and differential backups in Azure Backup?
+
+**Expected Answers:**
+1. I have extensive experience with Azure Backup and its integration with other Azure services such as Azure VM, Azure Blob storage, and Azure SQL Database. I have also worked on implementing customizations using Azure Resource Manager templates for seamless integrations.
+2. Azure Backup offers three types of backups: full, incremental, and differential. Full backups are recommended for the initial backup of data, while incremental and differential backups can be used for subsequent backups. Incremental backups only store changes made since the last backup, while differential backups store all changes made since the last full backup.
+3. I would first check the backup logs for any errors and then troubleshoot accordingly. If the backup failure is due to a network issue, I would check the network connectivity between the source and the backup location. If it is a storage issue, I would check the storage capacity and make necessary adjustments.
+4. I use Azure Monitor to monitor backup health, performance, and job status of Azure Backup. For troubleshooting, I rely on Azure Backup logs and Azure portal alerts to identify any issues and take necessary actions.
+5. Some best practices for setting up backup policies in Azure Backup include having a regular backup schedule, using incremental backups for frequent backups, storing backups in different storage accounts for redundancy, and setting up retention policies based on business requirements.
+6. Azure Backup offers data encryption in transit and at rest, role-based access control for authorization, and data protection against ransomware attacks using Azure Backup's immutable storage feature.
+7. I manage retention policies in Azure Backup by defining retention periods for each backup type and setting a rule for how many backups to retain. This ensures that backups are retained for a specified time and then automatically deleted to optimize storage usage.
+8. To restore a backup from Azure Backup, I would go to the recovery services vault, select the backup item, and choose the specific backup to restore. I would then select the recovery point and choose the restore location and type (full or existing).
+9. Azure Backup meets various compliance standards such as HIPAA, ISO, and GDPR. To ensure compliance, I follow Azure's documented recommendations for data protection, retention, and security features, as well as regularly review and update our backup policies.
+10. The main difference between incremental and differential backups is the amount of data that is backed up. Incremental backups only store changes made since the last backup, while differential backups store all changes made since the last full backup.
+
+**Technical Discussion Topics:**
+- The benefits of implementing Azure Backup using Azure Resource Manager templates.
+- Automation options for managing backups in Azure Backup, such as Azure Automation or PowerShell scripts.
+- How to protect Azure Backup data against ransomware attacks using the immutable storage feature.
+- Best practices for setting up backup policies in Azure Backup for different types of workloads (e.g. VMs, databases) 
+- The role of disaster recovery in Azure Backup and how to set up and test a disaster recovery plan.
+- Integration of Azure Backup with other Azure services like Azure Site Recovery for a comprehensive disaster recovery solution.
+- How to optimize storage usage in Azure Backup by using incremental backups and retention policies.
+- Collaboration options for Azure Backup such as sharing backup access with other users or restoring backups from a different Azure subscription.
+- Data encryption options in Azure Backup for securing data in transit and at rest.
+- The process of setting up a monitoring and alerting system for Azure Backup to ensure proactive detection and resolution of any backup issues. 

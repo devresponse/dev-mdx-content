@@ -1,0 +1,52 @@
+
+
+Technical Questions:
+1. Can you explain the role of CDN in web content delivery?
+- CDN stands for Content Delivery Network, and it is used to improve the performance of content delivery to users by caching and delivering content from servers located closer to the user, resulting in faster load times.
+
+2. What are the benefits of using Azure CDN?
+- There are several benefits of using Azure CDN, including:
+  - Improved website performance and increased user satisfaction
+  - Reduced server load and bandwidth usage
+  - Ability to handle large volumes of traffic
+  - Global coverage with Azure's extensive network of edge nodes
+  - Improved security with features like SSL encryption and DDoS protection
+  - Cost efficiency compared to hosting content on a single server
+
+3. How do you configure Azure CDN for a website?
+- Azure CDN can be configured in several ways, including using the Azure Portal, Azure CLI, or REST API. The basic steps for configuration are:
+  1. Create a CDN endpoint and specify the origin of the content.
+  2. Configure caching rules and optimization settings.
+  3. Configure delivery options such as HTTP or HTTPS.
+  4. Test and monitor the CDN configuration.
+
+4. Can you explain the difference between a Standard and a Premium Azure CDN endpoint?
+- A Standard Azure CDN endpoint uses HTTP and HTTPS delivery, while a Premium endpoint uses HTTPS only. Additionally, Premium endpoints have the added features of real-time analytics, instant purge, and custom SSL certificate support.
+
+5. How do you ensure high availability and redundancy with Azure CDN?
+- Azure CDN automatically provides high availability by distributing content across multiple edge nodes, ensuring that if one node goes down, the content can still be delivered from other nodes. Additionally, configuring multiple origins and setting up health probes can provide redundancy in case of an origin server failure.
+
+6. Can you explain the difference between Pull and Push CDN origins?
+- A Pull CDN origin is a storage location for content that is pulled from when requested by a user, while a Push CDN origin is a preconfigured location for content that is already present on the CDN.
+
+7. How does Azure CDN handle cache expiration and purging?
+- Azure CDN follows HTTP caching rules, such as using expiration headers, to determine when to expire and refresh cache. Purging the cache can be done manually through the Azure Portal or API, or automatically through rules set up in the CDN configuration.
+
+8. How do you troubleshoot CDN-related issues?
+- Troubleshooting CDN-related issues can involve monitoring the CDN metrics, reviewing the CDN configuration, checking for errors in the CDN logs, and testing the CDN configuration with different content types and settings.
+
+9. How would you configure CDN for dynamic content, such as API calls?
+- Dynamic content can be delivered through Azure CDN by using features like stale-while-revalidate, which allows the CDN to serve a previously cached version of the content while simultaneously checking for updates from the origin server.
+
+10. Can you explain how Azure CDN integrates with Azure DevOps?
+- Azure CDN can be integrated with Azure DevOps by configuring it as an external repository source or deploying CDN assets as part of a CD pipeline in Azure DevOps. This allows for seamless integration between content delivery and deployment processes.
+
+Technical Discussion Topics:
+- Performance optimization techniques using Azure CDN
+- Caching and cache invalidation strategies
+- Enabling custom domains and SSL certificates on Azure CDN
+- Using Azure Traffic Manager with CDN to achieve global load balancing
+- Monitoring and troubleshooting CDN performance
+- Best practices for managing large volumes of traffic with Azure CDN
+- Integrating Azure CDN with other Azure services, such as Azure App Service or Azure Storage
+- Advanced CDN features such as edgeworkers and rules engine

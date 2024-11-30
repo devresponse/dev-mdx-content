@@ -1,0 +1,64 @@
+
+
+
+**Technical Questions:**
+
+1. What is Azure Policy and why is it important for cloud deployments?
+- Azure Policy is a service in Microsoft Azure that allows organizations to enforce rules and regulations on their resource configurations, network access, and service operations. It is important for cloud deployments because it helps maintain compliance, security, and consistency across all resources.
+
+2. How does Azure Policy integrate with other Azure services?
+- Azure Policy can integrate with other Azure services through Service Principals, which are identities used by applications and services to access Azure resources. Policies can also be applied at the subscription, resource group, or resource level, depending on the scope needed.
+
+3. How can you ensure that Azure Policy is being enforced in your environment?
+- You can use the "Audit" and "Deny" effects in Azure Policy to ensure that policies are being enforced. The "Audit" effect will generate a report of all non-compliant resources, while the "Deny" effect will prevent non-compliant resources from being deployed.
+
+4. Can Azure Policy be used to enforce regulatory compliance?
+- Yes, Azure Policy can be used to enforce regulatory compliance by creating policies that match specific regulatory requirements and assigning them to the appropriate resources.
+
+5. How can you test and validate your Azure Policy before enforcing it?
+- You can test and validate your Azure Policy using the "What-If" feature, which allows you to simulate the effect of a policy without actually enforcing it. You can also use the "Validate" button to check the syntax and structure of your policy.
+
+6. Can Azure Policy be used to enforce security best practices?
+- Yes, Azure Policy can be used to enforce security best practices by creating policies that restrict network access, require specific permissions for resources, and ensure that resources are deployed with the most up-to-date security configurations.
+
+7. How can you track and monitor policy compliance over time?
+- You can track and monitor policy compliance over time by using the Azure Policy compliance dashboard, which provides a comprehensive view of all policies and their compliance status. You can also use policy insights and alerts to receive notifications when resources become non-compliant.
+
+8. Can Azure Policy be used in hybrid cloud environments?
+- Yes, Azure Policy can be used in hybrid cloud environments by integrating with Azure Arc. This allows you to manage and enforce policies for resources on-premises or in other cloud environments.
+
+9. How can you troubleshoot issues with Azure Policy?
+- You can troubleshoot issues with Azure Policy by checking the policy compliance dashboard, policy insights, and alerts. You can also review the policy assignments and definition to ensure they are correctly configured.
+
+10. Is it possible to automatically remediate non-compliant resources with Azure Policy?
+- Yes, with the "Auto Remediation" feature, Azure Policy can automatically remediate non-compliant resources by applying the necessary changes to bring them into compliance.
+
+**Technical Discussion Topics:**
+
+- Scope: 
+    - How can policy scopes be used to target specific resources or resource groups?
+    - Are there any limitations to the scope of policies?
+    - Can multiple policies be assigned to the same scope?
+- Effects:
+    - How do "Audit" and "Deny" effects differ from each other?
+    - How can "AuditIfNotExists" and "DeployIfNotExists" effects be used together?
+- Parameters and Conditions:
+    - How can parameters be used in policies?
+    - What are some examples of conditions that can be used in policies?
+    - Can policies be created without using parameters or conditions?
+- Policy Assignments and Definitions:
+    - What is the difference between a policy assignment and a policy definition?
+    - How can you track changes made to a policy?
+    - Is it possible to override a policy at a lower scope?
+- Custom Policies:
+    - How can you create custom policies using Azure Policy?
+    - Are there any best practices for creating effective custom policies?
+    - Can custom policies be shared and reused across different environments?
+- Role-Based Access Control:
+    - How can role-based access control be used with Azure Policy to manage policies?
+    - What permissions are required for a user to create or manage policies?
+    - Can roles be used to restrict access to specific policies?
+- Third-Party Integrations:
+    - Are there any third-party tools or services that can be integrated with Azure Policy?
+    - Can you provide examples of how third-party integrations can enhance the functionality of Azure Policy?
+    - How does Azure Policy handle non-Azure resources?

@@ -1,0 +1,44 @@
+
+
+## Technical Interview Questions for Google Kubernetes Engine (GKE):
+1. What is Google Kubernetes Engine (GKE) and how does it differ from other container orchestration tools?
+- GKE is a managed service for deploying, managing, and scaling containerized applications on Google Cloud Platform. It differs from other tools in that it is fully managed and integrates seamlessly with other Google Cloud services.
+
+2. Can you explain the architecture of GKE and its components?
+- GKE has a master node and multiple worker nodes that run your containers. The master node manages the cluster, while the worker nodes run the containers. Each node has a pod, which is a group of one or more containers that share resources.
+
+3. How do you scale applications on GKE?
+- GKE offers both manual and automatic scaling options. For manual scaling, you can change the number of replicas in a Kubernetes Deployment. For automatic scaling, you can use tools like Horizontal Pod Autoscaler (HPA) to automatically adjust the number of replicas based on CPU or memory usage.
+
+4. Can you walk me through the process of deploying a containerized application on GKE?
+- First, you need to create a Docker image of your application and upload it to a container registry like Google Container Registry. Then, you can use GKE to create a cluster, configure its nodes, and deploy your application using Kubernetes Deployment. GKE will automatically create pods and schedule your containers on the worker nodes.
+
+5. How do you manage and update containers running on GKE?
+- GKE supports rolling updates, where it updates containers one at a time without disrupting the overall application. You can also use Kubernetes ConfigMaps and Secrets to manage application configuration and sensitive data separately from the container image.
+
+6. What is Kubernetes Network Policy and how do you implement it on GKE?
+- Kubernetes Network Policy is used to define and enforce communication rules between pods in a cluster. To implement it on GKE, you can use the GKE Network Policy addon or create your own Network Policies using Kubernetes network policies.
+
+7. How do you monitor the health of applications running on GKE?
+- GKE integrates with Google Cloud Monitoring, which provides metrics and alerts for resource usage, application performance, and uptime. You can also use Stackdriver Logging and Stackdriver Trace to troubleshoot issues and track requests across your application.
+
+8. How does GKE handle load balancing and how can you configure it for your applications?
+- GKE supports both internal and external load balancers. For external load balancing, you can use Google Cloud Load Balancing or Ingress resources. For internal load balancing, you can use Google Cloud Internal Load Balancing or Service resources. Load balancing can be configured using annotations in the Kubernetes service configuration.
+
+9. Can you explain how GKE handles node upgrades and maintenance?
+- GKE has an automated process for upgrading and performing maintenance on nodes. This process ensures minimal disruption to running applications by creating new nodes and migrating pods to them before decommissioning the old nodes.
+
+10. How do you set up and manage access control for applications running on GKE?
+- GKE uses Kubernetes RBAC (Role-Based Access Control) to manage access control. You can create custom roles and assign them to users and service accounts. GKE also integrates with Google Cloud IAM to manage access at the cluster level.
+
+## Technical Discussion Topics for Google Kubernetes Engine (GKE):
+- Advantages and disadvantages of using GKE for managing containerized applications.
+- Best practices for optimizing GKE clusters and applications for cost and performance.
+- Integrations between GKE and other Google Cloud services, such as Stackdriver and Cloud Build.
+- How to deploy and manage stateful applications on GKE, such as databases or persistent storage.
+- Troubleshooting common issues and errors in GKE, including cluster and application failures.
+- Options for deploying and managing applications across multiple GKE clusters and regions.
+- Differences between GKE's Standard and Autopilot modes, and how to determine which one to use.
+- Security considerations for applications running on GKE, such as securing network traffic and data.
+- Integrating GKE with existing CI/CD pipelines and processes.
+- Strategies for disaster recovery and failover in GKE.

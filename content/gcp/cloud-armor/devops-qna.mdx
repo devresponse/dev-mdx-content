@@ -1,0 +1,66 @@
+
+
+# Technical Interview Questions for DevOps Engineer - Cloud Armor
+
+1. What are the key features of Cloud Armor?
+- Layer 3 and Layer 7 DDoS protection
+- IP whitelisting and blacklisting
+- Google-managed SSL certificates
+- Custom security rules
+- Centralized logging and monitoring
+
+2. How would you go about setting up a new deployment using Cloud Armor?
+- First, I would create a new backend service in Google Compute Engine.
+- Then, I would enable Cloud Armor on the backend service and define the necessary security rules.
+- Next, I would configure the load balancer to route traffic through Cloud Armor before reaching the backend service.
+- Finally, I would test the deployment to ensure that it is properly protected by Cloud Armor.
+
+3. Can you explain the difference between positive and negative security rules in Cloud Armor?
+- Positive security rules allow traffic that meets the specified criteria, while negative security rules block traffic that meets the criteria.
+- In other words, positive security rules allow known good traffic, while negative security rules block known bad traffic.
+
+4. How does Cloud Armor handle Layer 7 DDoS attacks?
+- Cloud Armor uses the Google Cloud Load Balancing infrastructure to detect and mitigate Layer 7 DDoS attacks.
+- It analyzes traffic patterns and applies custom security rules to block malicious requests.
+
+5. What types of logs are available in Cloud Armor and how can you access them?
+- Cloud Armor provides both audit logs and access logs.
+- Audit logs capture all changes made to security policies, while access logs record every request that is processed by Cloud Armor.
+- These logs can be accessed through various methods such as Stackdriver Logging and BigQuery.
+
+6. Can you describe the process of setting up IP whitelisting in Cloud Armor?
+- First, you would create a new security policy and add an IP allowlist rule.
+- Then, you would specify the IP range or individual IP addresses that should be allowed.
+- Next, you would apply this security policy to the backend service.
+- Finally, all traffic coming from the specified IPs would be allowed, while all other traffic would be blocked.
+
+7. How does Cloud Armor integrate with Google-managed SSL certificates?
+- Cloud Armor can automatically enable HTTPS traffic for backend services by attaching a Google-managed SSL certificate to the load balancer.
+- The certificate is automatically renewed and rotated by Google, eliminating the need for manual certificate management.
+
+8. How do you monitor and troubleshoot Cloud Armor?
+- Cloud Armor provides various metrics and logs that can be used for monitoring and troubleshooting.
+- These include load balancer logs, traffic graphs, and metrics such as request rate, response code, and response latency.
+- You can also use Stackdriver Monitoring and Stackdriver Trace to gain further insights and troubleshoot any issues.
+
+9. How does Cloud Armor handle traffic coming from non-HTTP or HTTPS ports?
+- Cloud Armor only protects traffic that is routed through an HTTPS load balancer.
+- If traffic is coming in on a different port, it would need to be redirected to the HTTPS port through a different solution, such as Cloud CDN or Cloud NAT.
+
+10. How would you create a custom security rule for blocking certain countries in Cloud Armor?
+- First, you would need to gather the IP ranges associated with the countries you want to block.
+- Then, you would create a new denylist rule in Cloud Armor and specify the IP ranges.
+- Finally, you would apply this rule to the backend service to block all traffic from those countries.
+
+# Technical Discussion Topics for Cloud Armor
+
+- Cloud Armor architecture and how it integrates with other Google Cloud Platform services
+- Best practices for setting up a secure deployment using Cloud Armor
+- How to handle false positives and false negatives with Cloud Armor security rules
+- Strategies for managing large-scale deployments with Cloud Armor
+- Integrating Cloud Armor with third-party security solutions for additional protection
+- Performance considerations and best practices for optimizing Cloud Armor deployments
+- The impact of applying multiple security policies to a single backend service in Cloud Armor
+- The role of machine learning in Cloud Armor's DDoS protection capabilities
+- Leveraging Stackdriver Monitoring and Alerting to proactively identify and respond to security threats in Cloud Armor
+- How to handle updates and changes to security policies in a production environment using Cloud Armor. 

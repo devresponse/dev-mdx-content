@@ -1,0 +1,53 @@
+
+### Technical Interview Questions:
+1. What is API Gateway and how does it work?
+   - API Gateway is a service that allows developers to create, publish, maintain, monitor, and secure APIs at any scale. It acts as a front-door for applications to access data, business logic, or functionality from backend services, such as Lambda functions, Elastic Beanstalk environments, or web servers.
+2. What are the benefits of using API Gateway?
+   - Some benefits of using API Gateway include: 
+     - Easy API creation and management
+     - Scalability and high availability
+     - Built-in security and authentication options
+     - Seamless integration with other AWS services
+     - Detailed monitoring and analytics
+3. Can you explain the process of creating an API in API Gateway?
+   - To create an API in API Gateway, you would need to:
+     - Define the API's resources and methods
+     - Set up the integration with the backend services
+     - Configure any necessary security and authentication mechanisms
+     - Deploy the API to a stage for testing and production
+4. How can you secure an API in API Gateway?
+   - API Gateway offers various security mechanisms, such as: 
+     - AWS IAM roles and policies for authorization
+     - Custom authorizers for third-party authentication
+     - API keys for access control
+     - Resource policies for fine-grained control over APIs and resources.
+5. What is CORS and how can it be enabled in API Gateway?
+   - CORS (Cross-Origin Resource Sharing) is a security mechanism that allows controlled access to resources located on a different domain. To enable CORS in API Gateway, you would need to enable it on each API method or the API as a whole, and configure the necessary CORS headers in the method response.
+6. Can you explain API caching in API Gateway?
+   - API caching in API Gateway is a feature that allows you to cache responses from your backend services to improve performance and reduce the number of calls made to the backend. It can be configured at the stage level and supports both in-memory and CloudFront caching.
+7. How does API Gateway handle API versioning?
+   - API versioning in API Gateway is handled through stages and deployment environments. New versions of an API can be created by changing the deployment stage, which allows for testing and production versions of the same API to coexist.
+8. How can you troubleshoot issues with an API in API Gateway?
+   - Some troubleshooting techniques for API Gateway include: 
+     - Checking the API Gateway logs for any errors or warnings
+     - Using the CloudWatch metrics for API Gateway for performance monitoring
+     - Enabling detailed CloudWatch logging for more extensive troubleshooting
+9. How can API Gateway be integrated with other AWS services?
+   - API Gateway can be integrated with other AWS services in various ways, such as: 
+     - Integrating with AWS Lambda functions to execute business logic
+     - Integrating with AWS Cognito for user authentication
+     - Using AWS CloudFormation to provision and manage API Gateway resources
+10. Can you explain the difference between REST and WebSocket APIs in API Gateway?
+    - REST APIs are standard HTTP APIs that act as a request-response model, while WebSocket APIs are bidirectional communication channels that allow real-time data streaming. REST APIs are better suited for traditional clients, while WebSocket APIs are useful for applications that require low-latency communication.
+
+### Technical Discussion Topics:
+- The benefits of using API Gateway for microservices architectures
+- Methods for handling spikes in API traffic and scaling API Gateway
+- Approaches for securing APIs and preventing unauthorized access
+- Best practices for API versioning and deployment strategies
+- Integration options for integrating with third-party services and non-AWS services
+- Performance optimization techniques using caching and throttling in API Gateway
+- Designing API Gateway workflows for complex API architectures
+- Troubleshooting techniques for common API Gateway errors and issues
+- Strategies for managing and monitoring API Gateway deployments
+- Next steps for incorporating API Gateway in a CI/CD pipeline for rapid development and deployment.

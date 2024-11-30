@@ -1,0 +1,36 @@
+
+
+**Technical Interview Questions for DevOps Engineer (KMS Division):**
+
+1. What is KMS (Key Management Service) and how does it work?
+Expected answer: KMS is a managed service that allows you to securely create and control the encryption keys used to encrypt your data. It uses Hardware Security Modules (HSMs) to protect the security of your keys.
+
+2. Can you explain the process flow for deploying applications using KMS?
+Expected answer: The process typically involves creating a master key, encrypting the data using the master key, and then using KMS APIs to decrypt the data during deployment. The decrypted data is then used to launch the application.
+
+3. How do you ensure key rotation and key management best practices while using KMS?
+Expected answer: Key rotation can be scheduled through the KMS console or through the KMS API. As for best practices, we recommend using separate master keys for different applications and regularly rotating those keys.
+
+4. Can you explain the concept of key policies and IAM policies in KMS?
+Expected answer: Key policies control access to the actual keys stored in KMS, while IAM policies control access to KMS APIs and the ability to manage keys.
+
+5. How would you handle key revocation and key deletion in KMS?
+Expected answer: Key revocation can be done through the KMS console or API, and it effectively disables the key from being used. Key deletion, on the other hand, is a permanent action and should only be done after confirming that it won't negatively impact any applications.
+
+6. What are some best practices for securing KMS keys?
+Expected answer: Some best practices include enabling key rotation, integrating with AWS CloudTrail for auditing purposes, and regularly monitoring key usage and access.
+
+7. How does KMS integrate with other AWS services?
+Expected answer: KMS integrates with services such as Amazon S3, EBS, and Redshift to provide secure key storage and encryption functionality.
+
+**Technical Discussion Topics for KMS (Key Management Service):**
+- The differences between symmetric and asymmetric encryption and how they are used in KMS.
+- The role of Hardware Security Modules (HSMs) in ensuring the security of keys stored in KMS.
+- Best practices for implementing key management processes in an organization using KMS.
+- The benefits of using KMS over managing encryption keys on your own.
+- Strategies for maintaining compliance with regulatory requirements while using KMS.
+- The impact of key rotation on the security and performance of applications using KMS.
+- The process for auditing and monitoring key usage in KMS.
+- The ways in which KMS can be integrated with third-party tools for enhanced security.
+- Examples of real-world use cases for KMS, such as data encryption for sensitive databases or securing communications between distributed systems.
+- Potential challenges or limitations of using KMS and how to mitigate them.

@@ -1,0 +1,56 @@
+
+
+###Technical Interview Questions for Cloud CDN DevOps Engineer:
+
+1. What is Cloud CDN and what are its key features?
+
+Expected Answer: Cloud CDN is a content delivery network service offered by Google Cloud Platform. Its key features include global coverage, high performance, automatic caching, and load balancing.
+
+2. How does Cloud CDN improve website performance?
+
+Expected Answer: Cloud CDN uses a global network of servers to store copies of website content closer to users, reducing the distance data needs to travel and improving website loading speed.
+
+3. How would you set up a new website to use Cloud CDN?
+
+Expected Answer: To set up a website to use Cloud CDN, we would first need to enable CDN on the website's load balancer, then configure the CDN cache behavior, and finally set up rules to specify which content should be cached.
+
+4. Can you explain the caching behavior of Cloud CDN?
+
+Expected Answer: Cloud CDN automatically caches content at the network edge, reducing the load on origin servers. It uses an adaptive cache control algorithm to determine the optimal timing for content refresh.
+
+5. How do you manage and monitor CDN performance?
+
+Expected Answer: Cloud CDN offers various monitoring tools, including Stackdriver Monitoring and Logging, to track performance and diagnose any issues. We can also use the CDN logs to analyze traffic patterns and optimize caching rules.
+
+6. How would you handle a sudden spike in traffic on a website using Cloud CDN?
+
+Expected Answer: Cloud CDN is designed to handle high traffic volumes and can scale automatically. We can also use cloud load balancing to distribute traffic across multiple servers and keep the website running smoothly.
+
+7. Can you explain how SSL termination works with Cloud CDN?
+
+Expected Answer: Cloud CDN allows for SSL termination at the edge, meaning the CDN acts as a proxy between the user and the origin server, handling all SSL encryption and decryption.
+
+8. How do you ensure the security of content delivered through Cloud CDN?
+
+Expected Answer: Cloud CDN offers various security features, such as HTTP/2 support, DDoS protection, and the ability to specify ACLs for content access. We can also implement SSL certificates and use origin authentication to prevent unauthorized access.
+
+9. How do you handle cache invalidation with Cloud CDN?
+
+Expected Answer: Content can be invalidated in two ways – TTL expiration, where the cache is refreshed after a specified time, or manual invalidation, where we can purge specific files or directories from the cache.
+
+10. How do you troubleshoot issues related to Cloud CDN?
+
+Expected Answer: We can use the logs and monitoring tools offered by Cloud CDN, as well as run various diagnostic tests, such as checking origin server availability, to identify and resolve any issues with Cloud CDN.
+
+###Technical Discussion Topics for Cloud CDN:
+
+- Global coverage and its benefits for content delivery
+- Load balancing and scaling in a CDN environment
+- High availability and fault tolerance in Cloud CDN
+- The difference between caching in CDN vs. caching in a web server
+- SSL termination at the edge and its implications for security and performance
+- Best practices for CDN cache control and setting up caching rules
+- Integrating Cloud CDN with other Google Cloud Platform services, such as cloud storage or cloud functions
+- Cost optimization strategies for using Cloud CDN
+- Performance monitoring and optimization in Cloud CDN
+- Common challenges and troubleshooting techniques in a CDN environment. 

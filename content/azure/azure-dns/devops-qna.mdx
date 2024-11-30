@@ -1,0 +1,37 @@
+
+
+## Technical Questions:
+1. Can you explain the purpose of Azure DNS and how it differs from other DNS services?
+2. How would you ensure high availability and low latency for DNS queries in Azure DNS?
+3. Can you walk me through the process of setting up a new DNS zone in Azure DNS?
+4. How would you handle a scenario where a DNS record needs to be updated or deleted in Azure DNS?
+5. Can you explain how Azure DNS integrates with other Azure services such as Azure Virtual Machines or Azure Web Apps?
+6. How would you troubleshoot DNS resolution issues in Azure DNS?
+7. Can you discuss the security features provided by Azure DNS and how you would ensure data privacy?
+8. How do you automate DNS management using Azure DNS?
+9. Can you explain the concept of DNS hierarchy and how it applies to Azure DNS?
+10. How would you handle a scenario where a DNS query gets resolved to an incorrect IP address in Azure DNS? 
+
+## Expected Answers:
+1. Azure DNS is a cloud-based DNS (Domain Name System) service that allows organizations to host their DNS domains in Azure. Unlike traditional DNS services, Azure DNS offers built-in security, scalability, and high availability through its integration with other Azure services.
+2. To ensure high availability and low latency, we would use Azure DNS's globally distributed name servers and leverage Azure's high-performance infrastructure.
+3. To set up a new DNS zone, we would first create a public or private DNS zone in the Azure portal. Then, we would add and configure DNS records such as A, CNAME, or MX records based on our needs.
+4. If a DNS record needs to be updated or deleted, we can easily modify or remove the record through the Azure portal or using Azure DNS's REST API.
+5. Azure DNS integrates with Azure Virtual Machines by allowing us to assign a DNS name to the virtual machine's IP address. For Azure Web Apps, we can map a custom domain name to the web app by creating a CNAME record in Azure DNS.
+6. To troubleshoot DNS resolution issues, we can use tools such as dig or nslookup to check if the DNS records are correctly configured and if the name servers are responding. We can also use Azure DNS Analytics to identify any issues and their root cause.
+7. Azure DNS offers security features such as access control through Azure RBAC, DNSSEC (Domain Name System Security Extensions) for data integrity, and private endpoint connectivity for data privacy.
+8. We can use Azure CLI or PowerShell scripts to automate DNS management in Azure DNS. We can also set up Azure DNS integration with Azure Automation to automate routine DNS tasks.
+9. DNS hierarchy in Azure DNS refers to the organization of DNS zones into sub-domains to manage a large number of DNS records more efficiently. This allows us to delegate control of sub-domains to different teams or departments.
+10. To handle incorrect DNS resolutions, we can use tools such as dig or nslookup to troubleshoot the issue and identify the incorrect record. We can also use Azure DNS's traffic manager to direct traffic to the correct IP address.
+
+## Technical Discussion Topics:
+- Overview of DNS and its role in the internet
+- Benefits of using a cloud-based DNS service like Azure DNS
+- DNS record types and their purposes
+- DNS propagation and how it affects DNS changes
+- Different DNS configurations and their use cases (internal, external, split, etc.)
+- Tools and techniques for DNS troubleshooting 
+- Security measures to protect against DNS attacks
+- Best practices for managing and maintaining DNS zones in Azure DNS
+- DNS performance and availability considerations in a distributed architecture
+- Monitoring and alerts for DNS services in Azure DNS.

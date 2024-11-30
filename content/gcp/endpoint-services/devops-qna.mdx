@@ -1,0 +1,44 @@
+
+
+### Technical Interview Questions
+
+1. Can you explain the basic functionality of Endpoint Services and its role in managing deployments?
+- Expected answer: Endpoint Services is a cloud-based service that allows for efficient and centralized management of deployments for various applications on the Google Cloud Platform. It acts as a single control point for managing access, monitoring, and security for all endpoints.
+
+2. How does Endpoint Services handle different types of endpoints, such as web applications, mobile apps, and APIs?
+- Expected answer: Endpoint Services uses different proxy configurations to handle different types of endpoints. For web applications, it uses a reverse proxy configuration, for mobile apps it uses a mobile app proxy, and for APIs it uses an API proxy.
+
+3. Can you walk me through the process of setting up a new endpoint and deploying an application using Endpoint Services?
+- Expected answer: First, we need to create a proxy in Endpoint Services and configure it based on the type of endpoint we are using. Then, we need to create a backend service for our application and configure it to use the endpoint proxy. Finally, we can deploy our application to our endpoint using the backend service.
+
+4. How does Endpoint Services handle authentication and authorization for endpoints?
+- Expected answer: Endpoint Services uses Google Cloud Identity-Aware Proxy (IAP) to handle authentication and authorization for endpoints. Users can be authenticated using various methods such as Google accounts, service accounts, or Identity Providers (IDPs). Once authenticated, users can be authorized to access specific endpoints based on their roles and permissions.
+
+5. Can you explain how Endpoint Services ensures the security of endpoints and applications?
+- Expected answer: Endpoint Services uses multiple layers of security to ensure the security of endpoints and applications. It uses SSL/TLS encryption for data in transit, allows for granular access control policies, and has DDoS protection and web application firewall capabilities.
+
+6. How does Endpoint Services handle scalability and high availability for deployments?
+- Expected answer: Endpoint Services has a distributed architecture that allows for scalability and high availability for deployments. It uses load balancing and auto-scaling techniques to handle high traffic, and multiple endpoints can be configured to handle failovers in case of an outage.
+
+7. How does Endpoint Services integrate with other Google Cloud Platform services such as Google Kubernetes Engine (GKE) and Google Cloud Functions?
+- Expected answer: Endpoint Services integrates with GKE through the use of Ingress controllers. It also integrates with Google Cloud Functions through an HTTP proxy. Both of these integrations allow for easier deployment and management of applications using Endpoint Services.
+
+8. Can you explain the process of updating and managing configurations for endpoints using Endpoint Services?
+- Expected answer: Endpoint Services uses a centralized configuration management system to manage and update configurations for endpoints. Changes can be made through the Endpoint Services API or through the Google Cloud Console. Once changes are made, they are propagated to all endpoints affected by the configuration.
+
+9. How does Endpoint Services monitor the health and performance of endpoints and applications?
+- Expected answer: Endpoint Services has built-in monitoring features that allow for real-time monitoring of endpoints and applications. It provides metrics such as request count, latency, and error rate, and can also send alerts for any issues detected.
+
+10. Can you discuss any experience you have with troubleshooting issues related to Endpoint Services deployments?
+- Expected answer: In my previous job, I encountered an issue with one of our endpoints not being able to connect to our backend service. After troubleshooting, I discovered that the issue was due to an incorrect SSL certificate configuration. I quickly resolved the issue by updating the certificate and ensuring all endpoints were configured correctly.
+
+### Technical Discussion Topics
+
+- The latest features and updates for Endpoint Services
+- Best practices for configuring and managing endpoints using Endpoint Services
+- Integrating Endpoint Services with other cloud-based services and tools
+- Ways to optimize performance and scalability for deployments using Endpoint Services
+- Security measures and compliance standards for Endpoint Services
+- Monitoring, alerting, and troubleshooting techniques for endpoints and applications using Endpoint Services
+- Use cases and success stories from companies that have implemented Endpoint Services
+- Upcoming advancements and potential future developments for Endpoint Services. 
